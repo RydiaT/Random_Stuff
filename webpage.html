@@ -3,12 +3,18 @@
 <head>
     <script src="randnum.js"></script>
     <meta charset="UTF-8">
+    <script>
+        let sayrandnum = document.getElementById("randomNumber");
+        randomNumber.innerHTML = "";
+    </script>
     <title>Random Numbers Here</title>
 </head>
 <body id="bodyId">
+<button type="button" onclick="sayrandnum()">Press to make go</button>
+<p id = 'randomNumber'></p>
 
-</body>
 <script>
     document.getElementById("bodyId").innerHTML = "<h1>Hello! Just open the console to test the code!</h1>";
 </script>
-</html></html>
+</body>
+</html>
