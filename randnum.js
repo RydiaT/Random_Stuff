@@ -10,5 +10,8 @@
 // when playerchoice = randnum then correct()
 //}
 //guessnum(30)
-const randnum = () =>
-let x = math.Floor(math.random(101)
+let randnum = () => {
+  let x = Math.floor(Math.random() * 101)
+  return x
+}
+console.log(randnum())
