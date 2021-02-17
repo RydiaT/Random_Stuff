@@ -11,7 +11,6 @@
 //}
 //guessnum(30)
 let randnum = () => {
-  let x = Math.floor(Math.random() * 101)
-  return x
-}
-console.log(randnum())
+  let randnum = Math.floor(Math.random() * 101);
+  return randnum
+};
