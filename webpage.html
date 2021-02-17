@@ -6,11 +6,14 @@
     <script>
         let sayrandnum = document.getElementById("randomNumber");
         randomNumber.innerHTML = "";
+        let bringRandNum = () => {
+            randomNumber.append(randnum() + '/n')
+        }
     </script>
     <title>Random Numbers Here</title>
 </head>
 <body id="bodyId">
-<button type="button" onclick="sayrandnum()">Press to make go</button>
+<button type="button" style="padding:5px" onclick="sayrandnum()">Press to make go</button>
 <p id = 'randomNumber'></p>
 
 <script>
