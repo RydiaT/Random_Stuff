@@ -1,0 +1,3 @@
+Finally got the bug where the text wasn't appearing on the website.
+Time for phase 2: Guessing the number.
+I have a guide of sorts to go off of, but it still promises to be a bit of a challenge doing it from scratch.
