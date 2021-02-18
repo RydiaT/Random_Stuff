@@ -1,29 +1,30 @@
-//Ok i only have a vauge idea for what I want here... I'm thinking random number gen.
-//randnum = for x in [0...100] {return x}
-//correct = () => {
-// return "Congrats! You guessed the number first try becuse I haven't fixed it to where you can enter multipal numbers.";
-//}
-//guessNum = (playerchoice) => {
-//switch playerchoice
-//when playerchoice > randnum then return "Lower!"
-//   when playerchoice < randnum then return "Higher!"
-// when playerchoice = randnum then correct()
-//}
-//guessnum(30)
+let RANDOM_NUMBER = 0;
 let randnum = () => {
-  let randnum = Math.floor(Math.random() * 101);
-  return randnum
+  RANDOM_NUMBER = Math.floor(Math.random() * 101);
 };
 let guessNum = (playerChoice) => {
-  switch (playerChoice) {
-    case playerChoice > randNum:
-      return "Lower!"
-    case playerChoice < randNum:
-      return "Higher!"
-    case playerChoice = randNum:
-      correct();
+  let message = "";
+  if (typeof playerChoice != "number") {
+    message = "Please input a number!"
   }
-}
+  else if (playerChoice < 1) {
+    message = "Please input a number greater than 1 but less than 100!"
+  }
+  else if (playerChoice > 100) {
+    message = "Please input a number greater than 1 but less than 100!"
+  }
+  else if (playerChoice < RANDOM_NUMBER) {
+    message = "Higher!";
+  }
+  else if (playerChoice > RANDOM_NUMBER) {
+    message = "Lower!";
+    }
+  else if (playerChoice === RANDOM_NUMBER) {
+    message = correct();
+  }
+  return message;
+};
 let correct = () => {
-  return ""
-}
+  return "Congrats! You got it!"
+};
+
