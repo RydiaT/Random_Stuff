@@ -14,4 +14,16 @@ let randnum = () => {
   let randnum = Math.floor(Math.random() * 101);
   return randnum
 };
-console.log(randnum())
+let guessNum = (playerChoice) => {
+  switch (playerChoice) {
+    case playerChoice > randNum:
+      return "Lower!"
+    case playerChoice < randNum:
+      return "Higher!"
+    case playerChoice = randNum:
+      correct();
+  }
+}
+let correct = () => {
+  return ""
+}
