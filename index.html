@@ -2,6 +2,8 @@
 <!DOCTYPE html>
     <html lang="en">
         <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="style.css" media="screen">
             <title>Random Numbers</title>
             <script src="randnum.js"></script>
             <script>
@@ -14,27 +16,18 @@
                     outputArea.innerHTML = "";
                 }
             </script>
-            <style>
-                #outputArea{
-                    background-color: azure;
-                    border: 3px solid grey;
-                    padding: 10px;
-                    max-width: 500px;
-                    margin: auto;
-                }
-            </style>
         </head>
         <body>
-        <div style="text-align: center;">
-        <label>Your Number: <input type="text" id="playerInput" style="padding:5px;width:200px;"></label>
+        <div>
+        <label>Your Number: <input type="text" id="playerInput"></label>
             <br>
-        <button type="button" style="padding:5px" onclick="randnum()">Generate Random Number</button>
-        <button type="button" style="padding:5px" onclick="randNumGame()">Guess your number!</button>
+        <button type="button" onclick="randnum()" id="gameButton1">Generate Random Number</button>
+        <button type="button" onclick="randNumGame()" id="gameButton2">Guess your number!</button>
         </div>
         <br>
         <pre id="outputArea"></pre>
-        <div style="text-align: center;">
-            <button type="button" style="padding:5px" onclick="resetOutput()">Clear</button>
+        <div>
+            <button type="button" onclick="resetOutput()" id="resetButton">Clear</button>
         </div>
         <br>
         </body>

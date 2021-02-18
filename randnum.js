@@ -27,4 +27,3 @@ let guessNum = (playerChoice) => {
 let correct = () => {
   return "Congrats! You got it!"
 };
-
