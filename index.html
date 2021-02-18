@@ -4,11 +4,13 @@
     <script src="randnum.js"></script>
     <meta charset="UTF-8">
     <script>
-        let sayrandnum = document.getElementById("randomNumber");
-        randomNumber.innerHTML = "";
-        let bringRandNum = () => {
-            randomNumber.append(randnum() + '/n')
-        }
+        let sayrandnumFunction = () => {
+            let sayrandnum = document.getElementById("randomNumber");
+            randomNumber.innerHTML = "";
+            let bringRandNum = () => {
+                randomNumber.append(randnum() + '/n')
+            }}
+            bringRandNum();
     </script>
     <title>Random Numbers Here</title>
     <style>
@@ -22,9 +24,7 @@
     </style>
 </head>
 <body id="bodyId">
-<button type="button" style="padding:5px" onclick="sayrandnum()">Press to make go</button>
-
-
+<button type="button" style="padding:5px" onclick="sayrandnumFunction()">Press to make go</button>
 <script>
 </script>
 <pre id="randomNumber"></pre>
