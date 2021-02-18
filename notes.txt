@@ -1,3 +1,12 @@
 Finally got the bug where the text wasn't appearing on the website.
 Time for phase 2: Guessing the number.
 I have a guide of sorts to go off of, but it still promises to be a bit of a challenge doing it from scratch.
+Ok, Version 1.0 is out after 8 failed tests!
+Next on the agenda, counting the number of wins you have total!
+While it will reset every time you reload the page, I plan to have a reset button already added to reset the score.
+After that, averages of how many guesses it takes for you to win.
+For instance, you won 3 times. In those 3 times, it took you the following number of guesses:
+4
+5
+3
+It would find the average of that, 4, and say it beside the number of wins you have.
