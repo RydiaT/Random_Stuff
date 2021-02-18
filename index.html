@@ -7,9 +7,9 @@
             <script>
                 let randNumGame = function() {
                     let outputArea = document.getElementById("outputArea");
-                    let playerInput = parseFloat(document.getElementById("playerInput").value)
+                    let playerInput = parseFloat(document.getElementById("playerInput").value);
                     outputArea.append(guessNum(playerInput) + " \n")
-                }
+                };
                 let resetOutput = () =>{
                     outputArea.innerHTML = "";
                 }
@@ -36,5 +36,6 @@
         <div style="text-align: center;">
             <button type="button" style="padding:5px" onclick="resetOutput()">Clear</button>
         </div>
+        <br>
         </body>
     </html>
