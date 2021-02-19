@@ -7,19 +7,19 @@
 }
 #gameButton1{
     padding: 5px;
-    font-family: "Arial Black";
+    font-family: Monaco,monospace;
 }
 #gameButton2 {
     padding: 5px;
-    font-family: "Arial Black";
+    font-family: Monaco,monospace;
 }
 #resetButton {
     padding: 5px;
-    font-family: "Arial";
+    font-family: "Lucida Console",monospace;
     background-color: red;
 }
 label {
-    font-family: "Arial";
+    font-family: Arial,monospace;
     width: 200px;
 }
 div {
