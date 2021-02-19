@@ -11,9 +11,11 @@
                     let outputArea = document.getElementById("outputArea");
                     let playerInput = parseFloat(document.getElementById("playerInput").value);
                     outputArea.append(guessNum(playerInput) + " \n")
+
                 };
-                let resetOutput = () =>{
+                let resetAll = () =>{
                     outputArea.innerHTML = "";
+                    totalGameStats.innerHTML = null;
                 }
             </script>
         </head>
@@ -26,8 +28,11 @@
         </div>
         <br>
         <pre id="outputArea"></pre>
+        <div id="totalGameStats">
+
+        </div>
         <div>
-            <button type="button" onclick="resetOutput()" id="resetButton">Clear</button>
+            <button type="button" onclick="resetAll()" id="resetButton">Clear All</button>
         </div>
         <br>
         </body>

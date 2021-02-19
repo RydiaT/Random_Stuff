@@ -1,6 +1,15 @@
 let RANDOM_NUMBER = 0;
+let GAME_COUNTER = null;
+let GUESS_ARRAY = [];
+let AVERAGE = 0;
 let randnum = () => {
+  if(GAME_COUNTER === null) GAME_COUNTER = 0;
+  else GAME_COUNTER++;
+  let outputArea = document.getElementById("outputArea")
+  outputArea.innerHTML = ""
+  outputArea.append("Starting new game... \n")
   RANDOM_NUMBER = Math.floor(Math.random() * 101);
+  GUESS_ARRAY[GAME_COUNTER] = 0;
 };
 let guessNum = (playerChoice) => {
   let message = "";
@@ -19,11 +28,22 @@ let guessNum = (playerChoice) => {
   else if (playerChoice > RANDOM_NUMBER) {
     message = "Lower!";
     }
-  else if (playerChoice === RANDOM_NUMBER) {
+  GUESS_ARRAY[GAME_COUNTER]++;
+  if (message === "") {
     message = correct();
   }
   return message;
 };
 let correct = () => {
+  updateStatBar();
   return "Congrats! You got it!"
 };
+let updateStatBar = () => {
+  let total = 0;
+  let statBar = document.getElementById("totalGameStats");
+  for(i = 0;i < GAME_COUNTER;i++){
+  total +=  GUESS_ARRAY[i];
+  }
+  AVERAGE = total / GUESS_ARRAY.length
+  statBar.innerHTML = AVERAGE
+}
