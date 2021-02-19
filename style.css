@@ -16,7 +16,7 @@
 #resetButton {
     padding: 5px;
     font-family: "Lucida Console",monospace;
-    background-color: red;
+    background-color: #990000;
 }
 label {
     font-family: Arial,monospace;
