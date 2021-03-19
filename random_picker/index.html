@@ -5,10 +5,19 @@
             <link rel="stylesheet" type="text/css" href="style.css" media="screen">
             <title>TBD</title>
             <script src="gamestuff.js"></script>
+            <script>
+               let playerInput = '' + document.getElementById("playerinput")
+            </script>
         </head>
         <body>
             <div>
             <h1>Something here</h1>
             </div>
+            <div>
+                <label>Input: <input type="text" id='playerinput'></label>
+                <button type="button" onclick="updateInputs()">Add To List</button>
+            <button type="button" onclick="showWork()">Pick A Random Word!</button>
+            </div>
+            <div id='randobj' style="font-family: Arial, Helvetica, sans-serif;font-size: large;"></div>
         </body>
     </html>
