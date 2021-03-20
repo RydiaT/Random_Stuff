@@ -1,5 +1,5 @@
 3/9/2021 9:20
 So the project we have decided on this being is *drum roll please* a random object picker. I feel like this is going to be easier
-said than done. Most notibly, when we get further on, I want it to be able to pick 2 from a set at random, and choose a winner
+said than done. Most notably, when we get further on, I want it to be able to pick 2 from a set at random, and choose a winner
 based on a set of rules. But first things first. Picking a random string from an array of strings.
 END
