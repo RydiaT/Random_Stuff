@@ -5,6 +5,7 @@
             <link rel="stylesheet" type="text/css" href="style.css" media="screen">
             <title>TBD</title>
             <script src="gamestuff.js"></script>
+            <script src="randomlist.js"></script>
         </head>
         <body>
             <div>
@@ -14,6 +15,8 @@
                 <label>Input: <input type="text" id='playerinput'></label>
                 <button type="button" onclick="updateInputs()">Add To List</button>
             <button type="button" onclick="doThing()">Pick A Random Word!</button>
+                <label>If you want to make us choose for you, you need to give us a number from 0-15. <input type="number" id="premadeindex"></label>
+                <button type="button" onclick="chooseForMe()">Pick a random word from our list!</button>
                 <button type="button" onclick="clearList()">Clear</button>
             </div>
             <div id='randword' style="font-family: Arial, Helvetica, sans-serif;font-size: large;"></div>
