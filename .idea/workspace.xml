@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02e7de8-c0f0-44c3-9274-d84b72701d1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding Train Stuff/Springs/sketch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_picker/word.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_picker/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_picker/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_picker/gamestuff.js" beforeDir="false" afterPath="$PROJECT_DIR$/random_picker/gamestuff.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_picker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/random_picker/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +24,15 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/random_picker/gamestuff.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -76,7 +82,6 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -111,7 +116,12 @@
       <workItem from="1613746128076" duration="68000" />
       <workItem from="1613746197727" duration="8155000" />
       <workItem from="1616253352930" duration="129000" />
-      <workItem from="1616253515737" duration="441000" />
+      <workItem from="1616253515737" duration="3845000" />
+      <workItem from="1616617091879" duration="808000" />
+      <workItem from="1617112193186" duration="1437000" />
+      <workItem from="1618161207480" duration="1541000" />
+      <workItem from="1618428881358" duration="1004000" />
+      <workItem from="1618429979893" duration="2024000" />
     </task>
     <servers />
   </component>
