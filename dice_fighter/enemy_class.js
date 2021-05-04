@@ -1,6 +1,6 @@
 class Enemy {
     constructor(name, health, defense, damage, aspect, EXP, gold, const_hp) {
-        this.heath = health
+        this.health = health
         this.defense = defense
         this.damage = damage
         this.aspect = aspect

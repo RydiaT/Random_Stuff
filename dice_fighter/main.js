@@ -31,7 +31,4 @@ let endBattle = () => {
 let doBattle = () => {
     setEnemy();
     battleArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_NUMBER].health
-    while (BATTLE_OVER === false) {
-        endBattle();
-    }
 }
