@@ -12,9 +12,9 @@ class Ability {
 
         }
         if (this.type === 'Attack') {
-            let enemyDefense = POSSIBLE_ENIMIES[ENEMYNUMBER].defense
+            let enemyDefense = POSSIBLE_ENEMIES[ENEMY_NUMBER].defense
             let damageDone = (PLAYER_ATTACK * this.damage_range) - enemyDefense
-            POSSIBLE_ENIMIES[ENEMYNUMBER].heath -= damageDone
+            POSSIBLE_ENEMIES[ENEMY_NUMBER].heath -= damageDone
         }
         if (this.type === 'Defend') {
 

@@ -11,23 +11,27 @@ let PLAYER_WEALTH = 0
 let PLAYER_EXP = 0
 let PLAYER_LEVEL = 1
 //Battle System?
-POSSIBLE_ENIMIES = [Goblin]
-ENEMYNUMBER = 0
-BATTLE_OVER = false
+let POSSIBLE_ENEMIES = [Goblin]
+let ENEMY_NUMBER = 0
+let BATTLE_OVER = false
 let setEnemy = () => {
-    ENEMYNUMBER = Math.floor(Math.random() * POSSIBLE_ENIMIES.length)
+    ENEMY_NUMBER = Math.floor(Math.random() * POSSIBLE_ENEMIES.length)
 }
 let endBattle = () => {
-    if (POSSIBLE_ENIMIES[ENEMYNUMBER].health <= 0) {
+    if (POSSIBLE_ENEMIES[ENEMY_NUMBER].health <= 0) {
         battleArea.innerHTML = ''
-        POSSIBLE_ENIMIES[ENEMYNUMBER].health = POSSIBLE_ENIMIES[ENEMYNUMBER].const_hp
+        POSSIBLE_ENEMIES[ENEMY_NUMBER].health = POSSIBLE_ENEMIES[ENEMY_NUMBER].const_hp
+        ENEMY_NUMBER = 0
         BATTLE_OVER = true
+    }
+    else {
+        battleArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_NUMBER].health
     }
 }
 let doBattle = () => {
     setEnemy();
-    battleArea.innerHTML = POSSIBLE_ENIMIES[ENEMYNUMBER].health
-    while (BATTLE_OVER = false) {
+    battleArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_NUMBER].health
+    while (BATTLE_OVER === false) {
         endBattle();
     }
 }
