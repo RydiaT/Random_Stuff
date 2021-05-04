@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02e7de8-c0f0-44c3-9274-d84b72701d1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dice_fighter/enemy_class.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/ability_object.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/ability_object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/enemy_class.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/enemy_class.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/main.js" afterDir="false" />
     </list>
@@ -131,7 +131,7 @@
       <workItem from="1618428881358" duration="1004000" />
       <workItem from="1618429979893" duration="9707000" />
       <workItem from="1620133956785" duration="75000" />
-      <workItem from="1620134998463" duration="6371000" />
+      <workItem from="1620134998463" duration="8881000" />
     </task>
     <servers />
   </component>
