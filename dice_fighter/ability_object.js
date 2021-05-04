@@ -12,13 +12,10 @@ class Ability {
 
         }
         if (this.type === 'Attack') {
-            let enemyDefense = POSSIBLE_ENEMIES[ENEMY_NUMBER].defense
+            let enemyDefense = POSSIBLE_ENEMIES[ENEMY_INDEX].defense
             let damageDone = (PLAYER_ATTACK * this.damage_range) - enemyDefense
-            POSSIBLE_ENEMIES[ENEMY_NUMBER].health -= damageDone
+            POSSIBLE_ENEMIES[ENEMY_INDEX].health -= damageDone
                 endBattle();
-                console.log(POSSIBLE_ENEMIES[ENEMY_NUMBER].health)
-                console.log(POSSIBLE_ENEMIES[ENEMY_NUMBER].name)
-                console.log(BATTLE_OVER)
         }
         if (this.type === 'Defend') {
 
