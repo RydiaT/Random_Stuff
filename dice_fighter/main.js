@@ -6,7 +6,7 @@ let PLAYER_DEFENSE = 3
 let PLAYER_WEALTH = 0
 let PLAYER_EXP = 0
 let PLAYER_LEVEL = 1
-let PLAYER_CONST_HP = 10
+let PLAYER_CONST_HP = 50
 let EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (PLAYER_DEFENSE * PLAYER_ATTACK)
 //Battle System?
 let ENEMY_INDEX = 0
@@ -23,9 +23,6 @@ let levelUp = () => {
         PLAYER_LEVEL++
         PLAYER_CONST_HP++
         EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (PLAYER_DEFENSE * PLAYER_ATTACK)
-        console.log(EXP_NEEDED)
-        console.log(PLAYER_HP)
-        console.log(PLAYER_ATTACK)
     }
 }
 let endBattle = () => {

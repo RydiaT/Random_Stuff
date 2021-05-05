@@ -14,7 +14,7 @@ class Enemy {
          INTERVAL = setInterval(function() {
 
              let damageDone = PLAYER_DEFENSE - POSSIBLE_ENEMIES[ENEMY_INDEX].damage * Math.floor(Math.random() * POSSIBLE_ENEMIES[ENEMY_INDEX].damage)
-             PLAYER_HP =- damageDone
+             PLAYER_HP -= damageDone
              console.log('Enemy attacked!')
              console.log(damageDone)
              endBattle();
