@@ -12,13 +12,19 @@ class Enemy {
     }
     enemyAttack() {
          INTERVAL = setInterval(function() {
-
-             let damageDone = PLAYER_DEFENSE - POSSIBLE_ENEMIES[ENEMY_INDEX].damage * Math.floor(Math.random() * POSSIBLE_ENEMIES[ENEMY_INDEX].damage)
-             PLAYER_HP -= damageDone
-             console.log('Enemy attacked!')
-             console.log(damageDone)
-             endBattle();
-             expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
+             let damageDone = (POSSIBLE_ENEMIES[ENEMY_INDEX].damage + Math.floor(Math.random() * 4)) -  PLAYER_DEFENSE
+             if (damageDone <= 0) {
+                 missArea.innerHTML = 'Tink!'
+                 setTimeout(function() {
+                     missArea.innerHTML = '';
+                 }, 1000);
+             } else {
+                 PLAYER_HP -= damageDone
+                 console.log('Enemy attacked!')
+                 console.log(damageDone)
+                 endBattle();
+                 expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
+             }
         }, this.attack_spd)
     }
 }
