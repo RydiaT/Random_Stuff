@@ -10,4 +10,13 @@ class Enemy {
         this.const_hp = const_hp
         this.attack_spd = attack_spd
     }
+    enemyAttack() {
+         INTERVAL = setInterval(function() {
+            let damageDone = PLAYER_DEFENSE - this.damage * Math.floor(Math.random() * this.damage)
+            PLAYER_HP =- damageDone
+            console.log('Enemy attacked!')
+             console.log(damageDone)
+             endBattle();
+        }, this.attack_spd)
+    }
 }

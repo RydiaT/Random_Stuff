@@ -27,7 +27,6 @@ class Ability {
                 this.missNumber += 1
                 console.log(this.missNumber)
             }
-            endBattle();
         }
         if (this.type === 'Defend') {
 
