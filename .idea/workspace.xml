@@ -5,8 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/ability_class.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/ability_class.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/enemy_class.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/enemy_class.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dice_fighter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/objects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +134,7 @@
       <workItem from="1620133956785" duration="75000" />
       <workItem from="1620134998463" duration="24936000" />
       <workItem from="1620224148795" duration="12179000" />
-      <workItem from="1620247362314" duration="1463000" />
+      <workItem from="1620247362314" duration="4937000" />
     </task>
     <task id="LOCAL-00001" summary="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
       <created>1620236367434</created>

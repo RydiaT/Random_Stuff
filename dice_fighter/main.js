@@ -1,8 +1,10 @@
 let INTERVAL;
+let DEFEND_UP = false;
 //Player Stats
 let PLAYER_HP = 10
 let PLAYER_ATTACK = 1
 let PLAYER_DEFENSE = 3
+let CONST_DEFENSE = 3
 let PLAYER_WEALTH = 0
 let PLAYER_EXP = 0
 let PLAYER_LEVEL = 1

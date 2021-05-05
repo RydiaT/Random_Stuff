@@ -24,6 +24,8 @@ class Enemy {
                 console.log(damageDone)
                 endBattle();
                 expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
+                DEFEND_UP = false
+                PLAYER_DEFENSE = CONST_DEFENSE
             }
         }, this.attack_spd)
     }
