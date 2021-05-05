@@ -1,5 +1,5 @@
 body {
-    background-color: #45e3e3;
+    background-color: #b0b2c5;
 }
 div {
     text-align: center;
@@ -13,4 +13,8 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: red;
+}
+
+.buttonContainer{
+    text-align: center;
 }
