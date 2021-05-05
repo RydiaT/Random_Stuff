@@ -27,4 +27,7 @@ let doBattle = () => {
     setEnemy();
     nameArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_INDEX].name
     battleArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_INDEX].health
+
 }
+//Function for the setTimout handler
+

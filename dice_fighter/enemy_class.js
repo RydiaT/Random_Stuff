@@ -1,5 +1,5 @@
 class Enemy {
-    constructor(name, health, defense, damage, aspect, EXP, gold, const_hp) {
+    constructor(name, health, defense, damage, aspect, EXP, gold, const_hp, attack_spd) {
         this.health = health
         this.defense = defense
         this.damage = damage
@@ -8,5 +8,6 @@ class Enemy {
         this.EXP = EXP
         this.gold = gold
         this.const_hp = const_hp
+        this.attack_spd = attack_spd
     }
 }

@@ -1,6 +1,6 @@
 //Enemies
-let Goblin = new Enemy('Goblin', 50, 2, 1, 'Normal', 5, 5, 50)
-let Slime = new Enemy('Slime', 25, 10, 1, 'Water', 2, 7, 25)
+let Goblin = new Enemy('Goblin', 50, 2, 1, 'Normal', 5, 5, 50, 2000)
+let Slime = new Enemy('Slime', 25, 10, 1, 'Water', 2, 7, 25, 1000)
 //Possible Enemies List (Update with each added Enemy)
 let POSSIBLE_ENEMIES = [Goblin, Slime]
 //Abilities
