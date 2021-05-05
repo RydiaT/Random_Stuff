@@ -7,6 +7,8 @@
       <change beforePath="$PROJECT_DIR$/dice_fighter/enemy_class.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/enemy_class.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/objects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +134,8 @@
       <workItem from="1618428881358" duration="1004000" />
       <workItem from="1618429979893" duration="9707000" />
       <workItem from="1620133956785" duration="75000" />
-      <workItem from="1620134998463" duration="24837000" />
+      <workItem from="1620134998463" duration="24936000" />
+      <workItem from="1620224148795" duration="7501000" />
     </task>
     <servers />
   </component>

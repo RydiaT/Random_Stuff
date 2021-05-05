@@ -14,7 +14,6 @@ class Ability {
         }
         if (this.type === 'Attack') {
             let miss = Math.random()
-            console.log(miss)
             if (miss <= this.chance) {
                 let enemyDefense = POSSIBLE_ENEMIES[ENEMY_INDEX].defense
                 let damageDone = (PLAYER_ATTACK * this.damage_range) - enemyDefense
