@@ -16,7 +16,7 @@ class Ability {
             let miss = Math.random()
             if (miss <= this.chance) {
                 let enemyDefense = POSSIBLE_ENEMIES[ENEMY_INDEX].defense
-                let damageDone = (PLAYER_ATTACK * this.damage_range) - enemyDefense
+                let damageDone = (PLAYER_ATTACK * Math.floor(Math.random() * this.damage_range)) - enemyDefense
                 POSSIBLE_ENEMIES[ENEMY_INDEX].health -= damageDone
             } else {
                 missArea.innerHTML = 'Miss!'
@@ -24,7 +24,13 @@ class Ability {
                     missArea.innerHTML = '';
                 }, 1000);
                 this.missNumber += 1
-                console.log(this.missNumber)
+                setTimeout(function() {this.missNumber = 0}, 150000)
+                if (this.missNumber > 5) {
+                    muchMissArea.innerHTML = 'Man you suck at this.'
+                } else if (this.missNumber > 10) {
+                    muchMissArea.innerHTML = 'You should really play something else.'
+                }
+                console.log('Misses:' + this.missNumber)
             }
         }
         if (this.type === 'Defend') {
