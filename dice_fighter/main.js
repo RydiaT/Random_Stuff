@@ -13,8 +13,6 @@ let EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (PLAYER_DEFENSE * PLAYER_ATTACK)
 //Battle System?
 let ENEMY_INDEX = 0
 let BATTLE_OVER = false
-expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
-playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP
 let setStats = () => {
     level.innerHTML = PLAYER_LEVEL
     wealth.innerHTML = PLAYER_WEALTH
@@ -35,6 +33,7 @@ let resetBattle = () => {
     BATTLE_OVER = true
     PLAYER_HP = PLAYER_CONST_HP
 }
+
 let levelUp = () => {
     if (PLAYER_EXP >= EXP_NEEDED) {
         PLAYER_EXP = 0
@@ -75,3 +74,5 @@ let doBattle = () => {
     battleArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_INDEX].health
     BATTLE_OVER = false
 }
+expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
+playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP
