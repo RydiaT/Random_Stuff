@@ -19,15 +19,13 @@ let setStats = () => {
     defense.innerHTML = PLAYER_DEFENSE
     attack.innerHTML = PLAYER_ATTACK
 }
-setStats();
 let setEnemy = () => {
     ENEMY_INDEX = Math.floor(Math.random() * POSSIBLE_ENEMIES.length)
 }
 let resetBattle = () => {
     clearInterval(INTERVAL);
     battleArea.innerHTML = ''
-    nameArea.innerHTML = ''
-    playerHpArea.innerHTML = ''
+    playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP
     POSSIBLE_ENEMIES[ENEMY_INDEX].health = POSSIBLE_ENEMIES[ENEMY_INDEX].const_hp
     ENEMY_INDEX = 0
     BATTLE_OVER = true
@@ -70,9 +68,8 @@ let endBattle = () => {
 let doBattle = () => {
     setEnemy();
     POSSIBLE_ENEMIES[ENEMY_INDEX].enemyAttack()
+    playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP
     nameArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_INDEX].name
     battleArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_INDEX].health
     BATTLE_OVER = false
 }
-expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
-playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP

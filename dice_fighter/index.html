@@ -17,7 +17,6 @@
     <p class="lead">Press the description button for an ability to read the description, click the ability to use it, click "Start Battle" to spawn an enemy.</p>
     </div>
     <div class="container p-3 my-3 bg-dark text-white text-center rounded">
-    <div id="descriptionArea" class="font-weight-light"></div>
         <p class='text-muted'>Your HP</p>
         <div id="playerHpArea"></div>
         <p class='text-muted'>Enemy Name</p>
@@ -31,10 +30,18 @@
     </div>
     <div class="container text-center">
     <div class="btn-group">
-        <button type="button" class="btn btn-outline-dark" onclick="Basic_Attack.showDescription();">Basic Attack Description</button>
-        <button type="button" class="btn btn-outline-dark" onclick="Basic_Attack.useAbility();">Basic Attack</button>
         <button type="button" class="btn btn-outline-dark" onclick="doBattle();">Start Battle</button>
     </div>
+        <div class="container d-flex justify-content-center">
+            <div class="card bg-light" style="width: 150px">
+             <img class="card-img-top" src="sword.png" alt="Card Image">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Attack</h4>
+                    <p id="descriptionArea" class="card-text"></p>
+                    <a href="#" class="btn btn-dark" onclick="Basic_Attack.useAbility()">Use Ability</a>
+                </div>
+            </div>
+        </div>
     </div>
 <div class="container p-3 my-5 border">
     <h2>Player Stats</h2>
@@ -63,6 +70,12 @@
 </div>
     <script>
         initialise();
+        expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
+        playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP
+        Basic_Attack.showDescription();
+        setStats();
     </script>
+<p class="text-center small">Icon was given by Freepik on www.flaticon.com</p>
 </body>
+
 </html>
