@@ -16,20 +16,54 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-
-    <div class="buttonContainer">
-        <button type="button" onclick="Basic_Attack.showDescription()">Basic Attack Description</button>
-        <button type="button" onclick="Basic_Attack.useAbility()">Basic Attack</button>
-        <button type="button" onclick="doBattle()">Start Battle</button>
+    <div class="container text-center">
+    <h1 class="display-3">Lets fight some things.</h1>
+    <p1 class="lead">Press the description button for an ability to read the description, click the ability to use it, click "Start Battle" to spawn an enemy.</p1>
     </div>
-    <div class="container p-3 my-3 bg-dark text-white">
+    <div class="container p-3 my-3 bg-dark text-white text-center">
     <div id="descriptionArea" class="font-weight-light"></div>
-    <div id="playerHpArea"></div>
-    <div id="nameArea" class="lead"></div>
-    <div id="battleArea"></div>
-    <div id="missArea" class="font-weight-bold"></div>
-    <div id="expArea" class="font-weight-bold"></div>
+        <p class='text-muted'>Your HP</p>
+        <div id="playerHpArea"></div>
+        <p class='text-muted'>Enemy Name</p>
+        <div id="nameArea" class="lead"></div>
+        <p class='text-muted'>Enemy HP</p>
+        <div id="battleArea"></div>
+    <div id="missArea" class="font-weight-bolder text-danger lead"></div>
+        <p class='text-muted'>EXP To Next Level</p>
+        <div id="expArea" class="font-weight-bold"></div>
     <div id="muchMissArea"></div>
     </div>
+    <div class="container text-center">
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-dark" onclick="Basic_Attack.showDescription()">Basic Attack Description</button>
+        <button type="button" class="btn btn-outline-dark" onclick="Basic_Attack.useAbility()">Basic Attack</button>
+        <button type="button" class="btn btn-outline-dark" onclick="doBattle()">Start Battle</button>
+    </div>
+    </div>
+<div class="container p-3 my-3 border">
+    <h2>Player Stats</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Stat name</th>
+            <th>Stat Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Level</td>
+            <td>Wealth</td>
+            <td>Attack</td>
+            <td>Defense</td>
+        </tr>
+        <tr>
+            <td id="level"></td>
+            <td id="wealth"></td>
+            <td id="attack"></td>
+            <td id="defense"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
