@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e02e7de8-c0f0-44c3-9274-d84b72701d1e" name="Default Changelist" comment="EXP needed is going down from 47 to 14. I'm taking a nap before touching this." />
+    <list default="true" id="e02e7de8-c0f0-44c3-9274-d84b72701d1e" name="Default Changelist" comment="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
+      <change beforePath="$PROJECT_DIR$/.idea/Random_Stuff.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Random_Stuff.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -55,6 +60,9 @@
     <option name="height" value="1000" />
   </component>
   <component name="ProjectId" id="1oZQvOrOQZiKnHeNJVI8niFcA97" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -79,6 +87,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -128,7 +137,7 @@
       <workItem from="1620133956785" duration="75000" />
       <workItem from="1620134998463" duration="24936000" />
       <workItem from="1620224148795" duration="12179000" />
-      <workItem from="1620247362314" duration="7048000" />
+      <workItem from="1620247362314" duration="10496000" />
     </task>
     <task id="LOCAL-00001" summary="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
       <created>1620236367434</created>
@@ -216,6 +225,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="EXP needed is going down from 47 to 14. I'm taking a nap before touching this." />
     <option name="LAST_COMMIT_MESSAGE" value="EXP needed is going down from 47 to 14. I'm taking a nap before touching this." />
   </component>

@@ -1,13 +1,10 @@
 body {
-    background-color: #b0b2c5;
+    background-color: #f2f6e9;
 }
 div {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-}
-button {
-    text-align: center;
 }
 #missArea {
     font-family: Arial, Helvetica, sans-serif;
