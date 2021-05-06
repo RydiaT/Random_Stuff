@@ -13,6 +13,7 @@ let EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (PLAYER_DEFENSE * PLAYER_ATTACK)
 //Battle System?
 let ENEMY_INDEX = 0
 let BATTLE_OVER = false
+level.innerHTML = PLAYER_LEVEL
 let setEnemy = () => {
     ENEMY_INDEX = Math.floor(Math.random() * POSSIBLE_ENEMIES.length)
 }
