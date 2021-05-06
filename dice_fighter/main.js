@@ -13,7 +13,15 @@ let EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (PLAYER_DEFENSE * PLAYER_ATTACK)
 //Battle System?
 let ENEMY_INDEX = 0
 let BATTLE_OVER = false
-level.innerHTML = PLAYER_LEVEL
+expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
+playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP
+let setStats = () => {
+    level.innerHTML = PLAYER_LEVEL
+    wealth.innerHTML = PLAYER_WEALTH
+    defense.innerHTML = PLAYER_DEFENSE
+    attack.innerHTML = PLAYER_ATTACK
+}
+setStats();
 let setEnemy = () => {
     ENEMY_INDEX = Math.floor(Math.random() * POSSIBLE_ENEMIES.length)
 }
@@ -36,6 +44,7 @@ let levelUp = () => {
         PLAYER_LEVEL++
         PLAYER_CONST_HP++
         EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (PLAYER_DEFENSE * PLAYER_ATTACK)
+        setStats();
     }
 }
 let endBattle = () => {

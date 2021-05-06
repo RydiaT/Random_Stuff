@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02e7de8-c0f0-44c3-9274-d84b72701d1e" name="Default Changelist" comment="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
+      <change afterPath="$PROJECT_DIR$/dice_fighter/initialise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -100,12 +103,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
-    <configuration name="randnum.coffee" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" node-parameters="--require coffee-script/register" path-to-js-file="randnum.coffee" working-dir="$PROJECT_DIR$">
+    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" node-parameters="--require coffee-script/register" path-to-js-file="main.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.randnum.coffee" />
+        <item itemvalue="Node.js.main.js" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +138,7 @@
       <workItem from="1620133956785" duration="75000" />
       <workItem from="1620134998463" duration="24936000" />
       <workItem from="1620224148795" duration="12179000" />
-      <workItem from="1620247362314" duration="16056000" />
+      <workItem from="1620247362314" duration="24057000" />
     </task>
     <task id="LOCAL-00001" summary="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
       <created>1620236367434</created>
