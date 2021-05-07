@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e02e7de8-c0f0-44c3-9274-d84b72701d1e" name="Default Changelist" comment="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/dice_fighter/ability_class.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/ability_class.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/objects.js" afterDir="false" />
+>>>>>>> 556fe0f698d4fdf873a74c84d6113e3829047c3e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,11 +141,16 @@
       <workItem from="1620134998463" duration="24936000" />
       <workItem from="1620224148795" duration="12179000" />
       <workItem from="1620247362314" duration="31118000" />
+<<<<<<< HEAD
       <workItem from="1620331752842" duration="3313000" />
       <workItem from="1620341574102" duration="15000" />
       <workItem from="1620342810098" duration="265000" />
       <workItem from="1620343092433" duration="5000" />
       <workItem from="1620414358401" duration="1414000" />
+=======
+      <workItem from="1620342566217" duration="74000" />
+      <workItem from="1620397726055" duration="3950000" />
+>>>>>>> 556fe0f698d4fdf873a74c84d6113e3829047c3e
     </task>
     <task id="LOCAL-00001" summary="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
       <created>1620236367434</created>
