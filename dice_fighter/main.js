@@ -2,21 +2,21 @@ let INTERVAL;
 let DEFEND_UP = false;
 //Player Stats
 let PLAYER_HP = 25
-let PLAYER_ATTACK = 1
+let PLAYER_ATTACK = 2
 let PLAYER_DEFENSE = 3
 let CONST_DEFENSE = 3
 let PLAYER_WEALTH = 0
 let PLAYER_EXP = 0
 let PLAYER_LEVEL = 1
 let PLAYER_CONST_HP = 25
-let EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (PLAYER_DEFENSE * PLAYER_ATTACK)
+let EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (CONST_DEFENSE * PLAYER_ATTACK)
 //Battle System?
 let ENEMY_INDEX = 0
 let BATTLE_OVER = false
 let setStats = () => {
     level.innerHTML = PLAYER_LEVEL
     wealth.innerHTML = PLAYER_WEALTH
-    defense.innerHTML = PLAYER_DEFENSE
+    defense.innerHTML = CONST_DEFENSE
     attack.innerHTML = PLAYER_ATTACK
 }
 let setEnemy = () => {
@@ -40,7 +40,8 @@ let levelUp = () => {
         PLAYER_DEFENSE++
         PLAYER_LEVEL++
         PLAYER_CONST_HP++
-        EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (PLAYER_DEFENSE * PLAYER_ATTACK)
+        CONST_DEFENSE++
+        EXP_NEEDED = (PLAYER_LEVEL * PLAYER_HP) - (CONST_DEFENSE * PLAYER_ATTACK)
         setStats();
     }
 }
@@ -62,7 +63,7 @@ let endBattle = () => {
     }
     else {
         battleArea.innerHTML = POSSIBLE_ENEMIES[ENEMY_INDEX].health
-        playerHpArea.innerHTML = PLAYER_HP
+        playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP
     }
 }
 let doBattle = () => {

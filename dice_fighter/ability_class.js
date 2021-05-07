@@ -27,7 +27,7 @@ class Ability {
                 let enemyDefense = POSSIBLE_ENEMIES[ENEMY_INDEX].defense
                 let damageDone = PLAYER_ATTACK * Math.floor(Math.random() * this.damage_range)
                 if (damageDone > enemyDefense) {
-                    POSSIBLE_ENEMIES[ENEMY_INDEX].health -= damageDone
+                    POSSIBLE_ENEMIES[ENEMY_INDEX].health = POSSIBLE_ENEMIES[ENEMY_INDEX].health - damageDone
                 } else {
                     missArea.innerHTML = 'Tink!'
                     setTimeout(function () {
