@@ -64,7 +64,4 @@ class Ability {
             }
         }
     }
-    showDescription() {
-        descriptionArea.innerHTML = this.discription
-    }
 }

@@ -32,7 +32,7 @@
     <div class="btn-group">
         <button type="button" class="btn btn-outline-dark" onclick="doBattle();">Start Battle</button>
     </div>
-        <div class="container d-flex justify-content-center">
+            <div class="card-deck">
             <div class="card bg-light" style="width: 150px">
              <img class="card-img-top" src="sword.png" alt="Card Image">
                 <div class="card-body">
@@ -41,7 +41,24 @@
                     <a href="#" class="btn btn-dark" onclick="Basic_Attack.useAbility()">Use Ability</a>
                 </div>
             </div>
+            <div class="card bg-light" style="width: 150px">
+                <img class="card-img-top" src="Plus%20sign.png" alt="Card Image">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Heal</h4>
+                    <p id="descriptionArea2" class="card-text"></p>
+                    <a href="#" class="btn btn-dark" onclick="Basic_Heal.useAbility()">Use Ability</a>
+                </div>
+            </div>
+
+        <div class="card bg-light" style="width: 150px">
+            <img class="card-img-top" src="Shield.png" alt="Card Image">
+            <div class="card-body">
+                <h4 class="card-title">Basic Defend</h4>
+                <p id="descriptionArea3" class="card-text"></p>
+                <a href="#" class="btn btn-dark" onclick="Basic_Defend.useAbility()">Use Ability</a>
+            </div>
         </div>
+    </div>
     </div>
 <div class="container p-3 my-5 border">
     <h2>Player Stats</h2>
@@ -72,7 +89,9 @@
         initialise();
         expArea.innerHTML = PLAYER_EXP + " / " + EXP_NEEDED
         playerHpArea.innerHTML = PLAYER_HP + "/" + PLAYER_CONST_HP
-        Basic_Attack.showDescription();
+        descriptionArea.innerHTML = Basic_Attack.discription
+        descriptionArea2.innerHTML = Basic_Heal.discription
+        descriptionArea3.innerHTML = Basic_Defend.discription
         setStats();
     </script>
 <p class="text-center small">Icon was given by Freepik on www.flaticon.com</p>
