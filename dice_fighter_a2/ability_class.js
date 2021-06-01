@@ -4,4 +4,7 @@ class Ability {
         this.damage_range = damage_range
         this.hit_chance = hit_chance
     }
+    useAbility() {
+
+}
 }
