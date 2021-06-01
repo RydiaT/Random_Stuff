@@ -32,13 +32,29 @@
     <div class="btn-group">
         <button type="button" class="btn btn-outline-dark" onclick="doBattle();">Start Battle</button>
     </div>
-        <div class="container d-flex justify-content-center">
+        <div class="container ">
             <div class="card bg-light" style="width: 150px">
              <img class="card-img-top" src="sword.png" alt="Card Image">
                 <div class="card-body">
                     <h4 class="card-title">Basic Attack</h4>
                     <p id="descriptionArea" class="card-text"></p>
-                    <a href="#" class="btn btn-dark" onclick="Basic_Attack.useAbility()">Use Ability</a>
+                    <a id ="attackbutton" href="#" class="btn btn-dark" onclick="Basic_Attack.useAbility()">Use Ability</a>
+                </div>
+            </div>
+            <div class="card bg-light" style="width: 150px">
+                <img class="card-img-top" src="sword.png" alt="Card Image">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Heal</h4>
+                    <p id="descriptionArea2" class="card-text"></p>
+                    <a id ="healbutton" href="#" class="btn btn-dark" onclick="Basic_Heal.useAbility()">Use Ability</a>
+                </div>
+            </div>
+            <div class="card bg-light" style="width: 150px">
+                <img class="card-img-top" src="sword.png" alt="Card Image">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Defend</h4>
+                    <p id="descriptionArea3" class="card-text"></p>
+                    <a id ="defendbutton" href="#" class="btn btn-dark" onclick="Basic_Defend.useAbility()">Use Ability</a>
                 </div>
             </div>
         </div>

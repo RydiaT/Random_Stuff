@@ -28,6 +28,10 @@ class Ability {
                 let damageDone = PLAYER_ATTACK * Math.floor(Math.random() * this.damage_range)
                 if (damageDone > enemyDefense) {
                     POSSIBLE_ENEMIES[ENEMY_INDEX].health = POSSIBLE_ENEMIES[ENEMY_INDEX].health - damageDone
+                    document.getElementById("attackbutton").disabled = true
+                    setTimeout(function () {
+                        document.getElementById("attackbutton").disabled = false
+                    }, 2000)
                 } else {
                     missArea.innerHTML = 'Tink!'
                     setTimeout(function () {
