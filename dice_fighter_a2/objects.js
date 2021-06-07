@@ -6,3 +6,5 @@ let player = {
 }
 //Enemies
 let Slime = new Enemy(2,1,10,3)
+//Abilities
+let Basic_Atk = new Ability(5,.25)

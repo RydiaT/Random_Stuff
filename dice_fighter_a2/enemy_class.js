@@ -5,7 +5,7 @@ class Enemy {
         this.hp = hp
         this.ar = attack_range
     }
-    attack() {
+    attackPlayer() {
         let multiplier = Math.floor(Math.random() * this.ar)
         let damageDone = (this.attack * multiplier) - player.defense
         if (damageDone <= 0) {
