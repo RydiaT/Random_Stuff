@@ -14,6 +14,7 @@ class Enemy {
             player.hp = player.hp - damageDone
             console.log(`Enemy dealt ${damageDone}.`)
             console.log(`Player HP: ${player.hp}`)
+            updateScreen()
         }
     }
 }

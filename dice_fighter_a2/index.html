@@ -12,6 +12,18 @@
     <title>Lets try this again.</title>
 </head>
 <body>
+<div class="container rounded p-3 my-3 border">
+    <div id="enemyHP"></div>
+    <div id="playerHP"></div>
+</div>
+<div class="btn-group align-content-center">
+    <button type="button" onclick="Slime.attackPlayer()">Enemy Attack</button>
+    <button type="button" onclick="Basic_Atk.useAbility(Slime)">Player Attack</button>
 
+</div>
+<script>
+    initialise();
+    updateScreen();
+</script>
 </body>
 </html>

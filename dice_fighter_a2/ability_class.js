@@ -13,6 +13,7 @@ class Ability {
                 target.hp -= damageDone
                 console.log("Enemy HP: " + target.hp)
                 console.log("Player Damage Done:" + damageDone)
+                updateScreen();
             } else {
                 console.log("Player Damage Done: 0")
             }
