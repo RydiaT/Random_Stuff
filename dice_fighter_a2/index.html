@@ -25,13 +25,14 @@
 <div class="container text-center">
 <div class="btn-group">
     <button class="btn btn-outline-dark" type="button" onclick="currentEnemy.attackPlayer()">Enemy Attack</button>
-    <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.useAbility(currentEnemy)">Player Attack</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.useAbility()">Player Attack</button>
 </div>
 </div>
 <script>
     initialise();
     playerHP.innerHTML = "Player HP: " + player.hp
     setBattle();
+    updateScreen();
 </script>
 </body>
 </html>

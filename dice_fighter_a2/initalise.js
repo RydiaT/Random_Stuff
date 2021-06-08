@@ -8,6 +8,6 @@ let initialise = () => {
 
 }
 let updateScreen = () => {
-    enemyHP.innerHTML = "Enemy HP: " + currentEnemy.hp
+    enemyHP.innerHTML =  currentEnemy.name + " HP: " + currentEnemy.hp
     playerHP.innerHTML = "Player HP: " + player.hp
 }
