@@ -21,5 +21,6 @@ class Ability {
         } else {
             damageDealt.innerHTML = "Player Missed"
         }
+        console.log(player.exp)
     }
 }
