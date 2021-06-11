@@ -1,5 +1,6 @@
+let autoAttack
 class Enemy {
-    constructor(name, attack, defense, hp, consthp, attack_range, expGiven) {
+    constructor(name, attack, defense, hp, consthp, attack_range, expGiven, attack_speed) {
         this.attack = attack
         this.defense = defense
         this.hp = hp
@@ -7,19 +8,22 @@ class Enemy {
         this.name = name
         this.expGiven = expGiven
         this.const_hp = consthp
+        this.as = attack_speed
     }
     attackPlayer() {
-        let multiplier = Math.floor(Math.random() * this.ar)
-        let damageDone = (this.attack * multiplier) - player.defense
+        autoAttack = setInterval(function(){
+        let multiplier = Math.floor(Math.random() * currentEnemy.ar)
+        let damageDone = (currentEnemy.attack * multiplier) - player.defense
         if (damageDone <= 0) {
-            damageDealt.innerHTML = this.name + ": 0 Damage Done"
+            enemyDamageDealt.innerHTML = currentEnemy.name + ": 0 Damage Done"
         } else {
             player.hp = player.hp - damageDone
-            damageDealt.innerHTML = this.name + `: ${damageDone} Damage Done`
+            enemyDamageDealt.innerHTML = currentEnemy.name + `: ${damageDone} Damage Done`
             console.log(`Player HP: ${player.hp}`)
             updateScreen();
             checkBattleEnd();
         }
-
+        }, currentEnemy.as)
+        return autoAttack
     }
 }

@@ -21,17 +21,18 @@
     <div class="lead" id="enemyHP"></div>
     <div class="lead" id="playerHP"></div>
     <div class="lead" id="playerLevel"></div>
-    <div class="lead" id="damageDealt"></div>
+    <div class="lead" id="enemyDamageDealt"></div>
+    <div class="lead" id="playerDamageDealt"></div>
 </div>
 <div class="container text-center">
 <div class="btn-group">
-    <button class="btn btn-outline-dark" type="button" onclick="currentEnemy.attackPlayer()">Enemy Attack</button>
+    <button class="btn btn-outline-dark" type="button" onclick="currentEnemy.attackPlayer()">Start Waves</button>
     <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.useAbility()">Player Attack</button>
 </div>
 </div>
 <script>
     initialise();
-    playerHP.innerHTML = "Player HP: " + player.hp
+    playerHP.innerHTML = "Player HP: " + player.hp + "/" + player.const_hp
     setBattle();
     updateScreen();
 </script>

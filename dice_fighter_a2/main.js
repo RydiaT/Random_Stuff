@@ -23,13 +23,14 @@ let checkBattleEnd = () => {
         setBattle();
         currentEnemy.hp = currentEnemy.const_hp
         player.exp += currentEnemy.expGiven
-        updateScreen();
         playerLevelUp();
+        updateScreen();
     } else if (player.hp <= 0) {
         setBattle();
         currentEnemy.hp = currentEnemy.const_hp
         player.hp = player.const_hp
         updateScreen();
+        clearInterval(autoAttack)
     }
     console.log(player.exp)
 }

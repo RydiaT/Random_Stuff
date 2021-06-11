@@ -12,14 +12,14 @@ class Ability {
                 console.log("Enemy HP: " + currentEnemy.hp)
                 currentEnemy.hp -= damageDone
                 console.log("Enemy HP: " + currentEnemy.hp)
-                damageDealt.innerHTML = "Player Damage Done: " + damageDone
+                playerDamageDealt.innerHTML = "Player Damage Done: " + damageDone
                 updateScreen();
                 checkBattleEnd();
             } else {
-                damageDealt.innerHTML = "Player Damage Done: 0"
+                playerDamageDealt.innerHTML = "Player Damage Done: 0"
             }
         } else {
-            damageDealt.innerHTML = "Player Missed"
+            playerDamageDealt.innerHTML = "Player Missed"
         }
         console.log(player.exp)
     }

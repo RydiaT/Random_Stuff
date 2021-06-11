@@ -8,8 +8,8 @@ let player = {
     exp: 0,
 }
 //Enemies
-let Slime = new Enemy("Slime",3,1,10,10,3,3)
-let Goblin = new Enemy("Goblin",5,3,20,20,2,6)
+let Slime = new Enemy("Slime",3,1,10,10,3,3,2000)
+let Goblin = new Enemy("Goblin",5,3,20,20,2,6, 3000)
 let enemyList = [Slime, Goblin]
 //Abilities
 let Basic_Atk = new Ability(5,.25)
