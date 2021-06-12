@@ -1,7 +1,8 @@
 class Ability {
-    constructor(damage_range, miss_chance) {
+    constructor(damage_range, miss_chance, cooldown) {
         this.dr = damage_range
         this.mc = miss_chance
+        this.cooldown = cooldown
     }
     useAbility() {
         let multiplier = Math.floor(Math.random() * this.dr)
@@ -21,6 +22,7 @@ class Ability {
         } else {
             playerDamageDealt.innerHTML = "Player Missed"
         }
-        console.log(player.exp)
+        attackButton.disabled = true
+        setTimeout(function(){attackButton.disabled = false}, this.cooldown)
     }
 }

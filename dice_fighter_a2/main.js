@@ -1,13 +1,15 @@
 let currentEnemy;
+let enemiesKilled;
+let waveNumber;
 let setBattle = () => {
     currentEnemy = enemyList[Math.floor(Math.random() * enemyList.length)]
-    enemyHP.innerHTML = "Enemy HP: " + currentEnemy.hp
+    enemyHPText.innerHTML = "Enemy HP: " + currentEnemy.hp
     return currentEnemy
 }
 let playerLevelUp = () => {
-    let requiredEXP = (player.level * player.hp) + (player.attack * player.defense) * player.hp / 10
-    console.log(requiredEXP)
-    if (player.exp >= requiredEXP) {
+    player.expNeeded = (player.level * player.hp) + (player.attack * player.defense) * player.hp / 10
+    console.log(player.expNeeded)
+    if (player.exp >= player.expNeeded) {
         console.log(player)
         player.level += 1
         player.hp += player.const_hp / 2
@@ -25,6 +27,8 @@ let checkBattleEnd = () => {
         player.exp += currentEnemy.expGiven
         playerLevelUp();
         updateScreen();
+        enemiesKilled++
+        startNewWave();
     } else if (player.hp <= 0) {
         setBattle();
         currentEnemy.hp = currentEnemy.const_hp
@@ -33,4 +37,8 @@ let checkBattleEnd = () => {
         clearInterval(autoAttack)
     }
     console.log(player.exp)
+}
+let startNewWave = () => {
+    waveNumber++
+    console.log(waveNumber)
 }

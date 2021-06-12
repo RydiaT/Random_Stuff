@@ -1,18 +1,40 @@
+//HTML ID Variables
 let enemyHP;
 let playerHP;
 let enemyDamageDealt;
 let playerDamageDealt;
 let playerLevel;
+let attackButton;
+let playerEXP;
+let enemyHPPercent;
+let playerHPPercent;
+let playerEXPPercent;
+let enemyHPText;
+let playerHPText;
+let playerEXPText;
+//Initializer Function
 let initialise = () => {
     enemyHP = document.getElementById('enemyHP')
     playerHP = document.getElementById('playerHP')
     enemyDamageDealt = document.getElementById('enemyDamageDealt')
     playerDamageDealt = document.getElementById('playerDamageDealt')
     playerLevel = document.getElementById('playerLevel')
-
+    attackButton = document.getElementById('attackButton')
+    playerEXPText = document.getElementById('playerEXPText')
+    enemyHPText = document.getElementById('enemyHPText')
+    playerHPText = document.getElementById('playerHPText')
+    playerEXP = document.getElementById('playerEXP')
 }
+//Updates Screen To Show Current Information
 let updateScreen = () => {
-    enemyHP.innerHTML =  currentEnemy.name + " HP: " + currentEnemy.hp + "/" + currentEnemy.const_hp
-    playerHP.innerHTML = "Player HP: " + player.hp + "/" + player.const_hp
-    playerLevel.innerHTML = "PLayer Level: " + player.level
+    enemyHPPercent = (currentEnemy.hp / currentEnemy.const_hp) * 100
+    playerHPPercent = (player.hp / player.const_hp) * 100
+    playerEXPPercent = (player.exp / player.expNeeded) * 100
+    enemyHP.style.width = enemyHPPercent + "%"
+    enemyHPText.innerHTML = currentEnemy.name + " HP: " + currentEnemy.hp + "/" + currentEnemy.const_hp
+    playerHP.style.width = playerHPPercent + "%"
+    playerHPText.innerHTML = "Player HP: " + player.hp + "/" + player.const_hp
+    playerLevel.innerHTML = "Player Level: " + player.level
+    playerEXP.style.width = playerEXPPercent + "%"
+    playerEXPText.innerHTML = "Player EXP: " + player.exp
 }

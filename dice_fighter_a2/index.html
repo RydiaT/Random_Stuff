@@ -11,28 +11,38 @@
     <meta charset="UTF-8">
     <style>
         body {
-            background-color: #e0ffe0;
+            background-color: #ffffff;
         }
     </style>
     <title>Lets try this again.</title>
 </head>
 <body>
 <div class="container rounded p-3 my-3 border text-center">
-    <div class="lead" id="enemyHP"></div>
-    <div class="lead" id="playerHP"></div>
+    <div class="lead" id="enemyHPText"></div>
+    <div class="progress rounded">
+    <div class="progress-bar bg-danger" role='progressbar' aria-valuemin="0" id="enemyHP"></div>
+    </div>
+    <div class="lead" id="playerHPText"></div>
+    <div class="progress rounded">
+    <div class="progress-bar bg-danger" role='progressbar' aria-valuemin="0" id="playerHP"></div>
+    </div>
     <div class="lead" id="playerLevel"></div>
+    <div class="lead" id="playerEXPText"></div>
+    <div class="progress rounded">
+    <div class="progress-bar bg-warning lead" role='progressbar' aria-valuemin="0" id="playerEXP"></div>
+    </div>
     <div class="lead" id="enemyDamageDealt"></div>
     <div class="lead" id="playerDamageDealt"></div>
 </div>
 <div class="container text-center">
 <div class="btn-group">
-    <button class="btn btn-outline-dark" type="button" onclick="currentEnemy.attackPlayer()">Start Waves</button>
-    <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.useAbility()">Player Attack</button>
+    <button class="btn btn-outline-dark" type="button" onclick="currentEnemy.attackPlayer()">Start Wave</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.useAbility()" id="attackButton">Player Attack</button>
 </div>
 </div>
 <script>
     initialise();
-    playerHP.innerHTML = "Player HP: " + player.hp + "/" + player.const_hp
+    playerHPText.innerHTML = "Player HP: " + player.hp + "/" + player.const_hp
     setBattle();
     updateScreen();
 </script>
