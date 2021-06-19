@@ -1,13 +1,13 @@
 let autoAttack
 class Enemy {
-    constructor(name, attack, defense, hp, consthp, attack_range, expGiven, attack_speed) {
+    constructor(name, attack, defense, hp, const_hp, attack_range, expGiven, attack_speed) {
         this.attack = attack
         this.defense = defense
         this.hp = hp
         this.ar = attack_range
         this.name = name
         this.expGiven = expGiven
-        this.const_hp = consthp
+        this.const_hp = const_hp
         this.as = attack_speed
     }
     attackPlayer() {

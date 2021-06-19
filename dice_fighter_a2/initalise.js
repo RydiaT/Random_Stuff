@@ -5,6 +5,7 @@ let enemyDamageDealt;
 let playerDamageDealt;
 let playerLevel;
 let attackButton;
+let healButton;
 let playerEXP;
 let enemyHPPercent;
 let playerHPPercent;
@@ -21,6 +22,7 @@ let initialise = () => {
     playerDamageDealt = document.getElementById('playerDamageDealt')
     playerLevel = document.getElementById('playerLevel')
     attackButton = document.getElementById('attackButton')
+    healButton = document.getElementById('healButton')
     playerEXPText = document.getElementById('playerEXPText')
     enemyHPText = document.getElementById('enemyHPText')
     playerHPText = document.getElementById('playerHPText')

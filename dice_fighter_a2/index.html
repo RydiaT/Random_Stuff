@@ -39,14 +39,15 @@
 <div class="container text-center">
 <div class="btn-group">
     <button class="btn btn-outline-dark" type="button" onclick="startWaves();" id="waveButton">Start Wave</button>
-    <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.useAbility()" id="attackButton">Player Attack</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.attackEnemy()" id="attackButton">Attack</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Basic_Heal.healPlayer()" id="healButton">Heal</button>
 </div>
 </div>
 <script>
     checkWaves();
     initialise();
     setBattle();
-    lockAttackButton();
+    lockButtons();
     playerHPText.innerHTML = "Player HP: " + player.hp + "/" + player.const_hp
     updateScreen();
 </script>

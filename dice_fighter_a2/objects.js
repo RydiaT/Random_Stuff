@@ -15,6 +15,7 @@ let Slime = new Enemy("Slime",3,1,10,10,3,3,2000)
 let Goblin = new Enemy("Goblin",5,3,20,20,2,6, 3000)
 //Abilities
 let Basic_Atk = new Ability(2,.10, 2500)
+let Basic_Heal = new Ability(5,.10, 5000)
 //Wave Objects
 let wave1 = new Wave(0, 0, [Slime])
 let wave2 = new Wave(5,1,[Slime])

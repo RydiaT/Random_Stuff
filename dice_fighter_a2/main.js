@@ -35,11 +35,11 @@ let checkBattleEnd = () => {
         checkWaves();
     } else if (player.hp <= 0) {
         setBattle();
-        currentEnemy.hp = currentEnemy.const_hp
+        currentEnemy.health = currentEnemy.const_hp
         player.hp = player.const_hp
         updateScreen();
         clearInterval(autoAttack)
-        lockAttackButton();
+        lockButtons();
         enemiesKilled -= 5
         waveNumber--
     }
@@ -48,15 +48,17 @@ let checkBattleEnd = () => {
 //Starts Wave
 let startWaves = () => {
     currentEnemy.attackPlayer();
-    unlockAttackButton();
+    unlockButtons();
 }
 //Locks the attack button, but unlocks the Start Wave button
-let lockAttackButton = () => {
+let lockButtons = () => {
     waveButton.disabled = false
     attackButton.disabled = true
+    healButton.disabled = true
 }
 //Locks the Start Wave button, but unlocks the attack button
-let unlockAttackButton = () => {
+let unlockButtons = () => {
     attackButton.disabled = false
+    healButton.disabled = false
     waveButton.disabled = true
 }
