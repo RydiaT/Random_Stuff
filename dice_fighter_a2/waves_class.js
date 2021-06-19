@@ -22,7 +22,7 @@ class Wave {
             console.log(this.enemies[i].attack)
                 this.enemies[i].attack += this.enemyStrength
                 this.enemies[i].defense += this.enemyStrength
-                this.enemies[i].expGiven += this.enemyStrength * 1.5
+                this.enemies[i].expGiven += this.enemyStrength * 2.5
                 this.enemies[i].hp += this.enemyStrength
                 this.enemies[i].const_hp += this.enemyStrength
                 console.log(this.enemies[i].attack)

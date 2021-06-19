@@ -35,7 +35,7 @@ let checkBattleEnd = () => {
         checkWaves();
     } else if (player.hp <= 0) {
         setBattle();
-        currentEnemy.health = currentEnemy.const_hp
+        currentEnemy.hp = currentEnemy.const_hp
         player.hp = player.const_hp
         updateScreen();
         clearInterval(autoAttack)
