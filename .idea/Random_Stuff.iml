@@ -7,6 +7,10 @@
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="jquery-3.5.1" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+<<<<<<< HEAD
     <orderEntry type="library" name="vue" level="application" />
+=======
+    <orderEntry type="library" name="bootstrap" level="application" />
+>>>>>>> 1d0d0d08a37159c718d1f3e18008859f927d90b0
   </component>
 </module>

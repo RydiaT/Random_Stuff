@@ -2,13 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02e7de8-c0f0-44c3-9274-d84b72701d1e" name="Default Changelist" comment="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
+      <change afterPath="$PROJECT_DIR$/dice_fighter_a2/ability_class.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_fighter_a2/enemy_class.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_fighter_a2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_fighter_a2/initalise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_fighter_a2/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dice_fighter_a2/objects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Random_Stuff.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Random_Stuff.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/dice_fighter/ability_class.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/ability_class.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/enemy_class.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/enemy_class.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/initialise.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/initialise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/objects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice_fighter/sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter_a1/sword.png" afterDir="false" />
+=======
 <<<<<<< HEAD
 =======
       <change beforePath="$PROJECT_DIR$/dice_fighter/ability_class.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/ability_class.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dice_fighter/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/dice_fighter/objects.js" afterDir="false" />
 >>>>>>> 556fe0f698d4fdf873a74c84d6113e3829047c3e
+>>>>>>> caabb9ad9fff1b043dd9509106b7610bea5821d2
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -150,7 +170,13 @@
 =======
       <workItem from="1620342566217" duration="74000" />
       <workItem from="1620397726055" duration="3950000" />
+<<<<<<< HEAD
+      <workItem from="1620413640960" duration="168000" />
+      <workItem from="1621727199342" duration="882000" />
+      <workItem from="1622232196232" duration="3517000" />
+=======
 >>>>>>> 556fe0f698d4fdf873a74c84d6113e3829047c3e
+>>>>>>> caabb9ad9fff1b043dd9509106b7610bea5821d2
     </task>
     <task id="LOCAL-00001" summary="EXP needed is going down from 47 to 14. I'm taking a nap before touching this.">
       <created>1620236367434</created>
