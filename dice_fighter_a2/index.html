@@ -42,17 +42,15 @@
     <button class="btn btn-outline-dark" type="button" onclick="startWaves();" id="waveButton">Start Wave</button>
     <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.attackEnemy()" id="attackButton">Attack</button>
     <button class="btn btn-outline-dark" type="button" onclick="Basic_Heal.healPlayer()" id="healButton">Heal</button>
-    <button class="btn btn-outline-dark" type="button" onclick="Health_Ptn.addToInventory()">Add Health Potion To Inventory</button>
-    <button class="btn btn-outline-dark" type="button" onclick="Strength_Ptn.addToInventory()">Add Strength Potion To Inventory</button>
-    <button class="btn btn-outline-dark" type="button" onclick="Defense_Ptn.addToInventory()">Add Defense Potion To Inventory</button>
 </div>
 </div>
-<div class="container rounded border text-center">
+<div class="container rounded border text-center" style="padding-top: 10px; margin-top: 15px">
     <h3>Inventory</h3>
     <table id="inventory" class="table table-hover">
         <tr>
             <th>Name</th>
             <th>Use</th>
+            <th>Description</th>
         </tr>
     </table>
     <button class="btn btn-outline-dark" type="button" onclick="Health_Ptn.useItem()">Use Health Potion</button>

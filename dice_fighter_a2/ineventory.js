@@ -1,15 +1,16 @@
 
 class Item {
-    constructor(name, use, potency, dropChance) {
+    constructor(name, use, potency, dropChance, description) {
     this.name = name
     this.use = use
     this.potency = potency
         this.id = 1;
     this.dropChance = dropChance
+        this.description = description
     }
     addToInventory(){
-        this.id = invArray.length++
-        inventory.innerHTML += "<tr id=" + this.id + "><td>" + this.name + "</td><td>" + this.use + "</td></tr>"
+        this.id = invArray.length
+        inventory.innerHTML += "<tr id=" + this.id + "><td>" + this.name + "</td><td>" + this.use + "</td><td>" + this.description + "</td></tr>"
         invArray.push(this.name)
         console.log(invArray)
         console.log(this.id)
@@ -48,7 +49,11 @@ class Item {
             console.log("Something went wrong with item uses")
         }
         invArray.splice(invArray.indexOf(this.name), 1)
-            inventory.deleteRow(this.id)
+            if (this.id === 0) {
+                inventory.deleteRow(1)
+            } else {
+                inventory.deleteRow(this.id)
+            }
         } else {
             console.log("That isn't in your inventory!")
         }

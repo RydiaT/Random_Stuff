@@ -33,8 +33,8 @@ class Enemy {
         while (x < this.itemsDropped.length) {
             if (random >= this.itemsDropped[x].dropChance) {
                 this.itemsDropped[x].addToInventory();
-                x++
             }
+            x++
         }
     }
 }
