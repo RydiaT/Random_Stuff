@@ -1,7 +1,9 @@
 //Player Object
 let player = {
     attack: 4,
+    const_attack: 4,
     defense: 3,
+    const_defense: 3,
     hp: 20,
     const_hp: 20,
     level: 1,
@@ -10,12 +12,17 @@ let player = {
 }
 
 
-//Enemies
-let Slime = new Enemy("Slime",3.5,1,10,10,3,10,2000)
-let Goblin = new Enemy("Goblin",5,3,20,20,2,15, 3000)
 //Abilities
 let Basic_Atk = new Ability(2,.05, 2500)
 let Basic_Heal = new Ability(5,.10, 5000)
+//Items
+let Health_Ptn = new Item("Health Potion", "Heal", 2.5, .45)
+let Strength_Ptn = new Item("Strength Potion", "Attack", 4, .25)
+let Defense_Ptn = new Item("Defense Potion", "Defense", 3, .25)
+let invArray = []
+//Enemies
+let Slime = new Enemy("Slime",3.5,1,10,10,3,10,2000, [Health_Ptn, Strength_Ptn])
+let Goblin = new Enemy("Goblin",5,3,20,20,2,15, 3000, [Health_Ptn, Strength_Ptn, Defense_Ptn])
 //Wave Objects
 let wave1 = new Wave(0, 0, [Slime])
 let wave2 = new Wave(5,1,[Slime])

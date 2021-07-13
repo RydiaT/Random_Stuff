@@ -14,6 +14,7 @@ let enemyHPText;
 let playerHPText;
 let playerEXPText;
 let waveButton;
+let inventory;
 //Initializer Function
 let initialise = () => {
     enemyHP = document.getElementById('enemyHP')
@@ -28,6 +29,7 @@ let initialise = () => {
     playerHPText = document.getElementById('playerHPText')
     playerEXP = document.getElementById('playerEXP')
     waveButton = document.getElementById('waveButton')
+    inventory = document.getElementById("inventory")
 }
 //Updates Screen To Show Current Information
 let updateScreen = () => {

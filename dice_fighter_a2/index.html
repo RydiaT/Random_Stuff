@@ -6,6 +6,7 @@
     <script src="ability_class.js"></script>
     <script src="enemy_class.js"></script>
     <script src="waves_class.js"></script>
+    <script src="ineventory.js"></script>
     <script src="objects.js"></script>
     <script src="wave_setter.js"></script>
     <script src="main.js"></script>
@@ -41,7 +42,22 @@
     <button class="btn btn-outline-dark" type="button" onclick="startWaves();" id="waveButton">Start Wave</button>
     <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.attackEnemy()" id="attackButton">Attack</button>
     <button class="btn btn-outline-dark" type="button" onclick="Basic_Heal.healPlayer()" id="healButton">Heal</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Health_Ptn.addToInventory()">Add Health Potion To Inventory</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Strength_Ptn.addToInventory()">Add Strength Potion To Inventory</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Defense_Ptn.addToInventory()">Add Defense Potion To Inventory</button>
 </div>
+</div>
+<div class="container rounded border text-center">
+    <h3>Inventory</h3>
+    <table id="inventory" class="table table-hover">
+        <tr>
+            <th>Name</th>
+            <th>Use</th>
+        </tr>
+    </table>
+    <button class="btn btn-outline-dark" type="button" onclick="Health_Ptn.useItem()">Use Health Potion</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Strength_Ptn.useItem()">Use Strength Potion</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Defense_Ptn.useItem()">Use Defense Potion</button>
 </div>
 <script>
     checkWaves();

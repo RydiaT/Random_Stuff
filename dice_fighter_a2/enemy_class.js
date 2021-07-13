@@ -1,6 +1,6 @@
 let autoAttack
 class Enemy {
-    constructor(name, attack, defense, hp, const_hp, attack_range, expGiven, attack_speed) {
+    constructor(name, attack, defense, hp, const_hp, attack_range, expGiven, attack_speed, itemsDropped) {
         this.attack = attack
         this.defense = defense
         this.hp = hp
@@ -9,6 +9,7 @@ class Enemy {
         this.expGiven = expGiven
         this.const_hp = const_hp
         this.as = attack_speed
+        this.itemsDropped = itemsDropped
     }
     attackPlayer() {
         autoAttack = setInterval(function(){
@@ -25,5 +26,15 @@ class Enemy {
         }
         }, currentEnemy.as)
         return autoAttack
+    }
+    dropItem() {
+        let random = Math.random()
+        let x = 0
+        while (x < this.itemsDropped.length) {
+            if (random >= this.itemsDropped[x].dropChance) {
+                this.itemsDropped[x].addToInventory();
+                x++
+            }
+        }
     }
 }

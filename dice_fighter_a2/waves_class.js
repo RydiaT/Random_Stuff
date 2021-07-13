@@ -1,15 +1,4 @@
-// let wave = {
-//     wave1: {
-//         neededKills: 0,
-//         enemyStrength: 1,
-//         enemies: [Slime]
-//     },
-//     wave2: {
-//         neededKills: 5,
-//         enemyStrength: 2,
-//         enemies: [Slime]
-//     }
-// }
+
 class Wave {
     constructor(neededKills, enemyStrength, enemies) {
         this.neededKills = neededKills
