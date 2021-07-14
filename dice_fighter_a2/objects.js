@@ -1,7 +1,7 @@
 //Player Object
 let player = {
-    attack: 4,
-    const_attack: 4,
+    attack: 6,
+    const_attack: 6,
     defense: 3,
     const_defense: 3,
     hp: 20,
@@ -31,8 +31,8 @@ let Goblin = new Enemy("Goblin",5,3,20,20,2,30, 3000, [Health_Ptn, Strength_Ptn,
 
 //Wave Objects
 let wave1 = new Wave(0, 0, [Slime])
-let wave2 = new Wave(5,1,[Slime])
-let wave3 = new Wave(10,2,[Slime])
-let wave4 = new Wave(15,3,[Slime])
-let wave5 = new Wave(20,4,[Slime])
-let wave6 = new Wave(25,5,[Slime, Goblin])
+let wave2 = new Wave(10,1,[Slime])
+let wave3 = new Wave(20,2,[Slime])
+let wave4 = new Wave(30,3,[Slime])
+let wave5 = new Wave(40,3.5,[Slime])
+let wave6 = new Wave(50,4,[Slime, Goblin])

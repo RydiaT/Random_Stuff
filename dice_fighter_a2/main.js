@@ -10,7 +10,7 @@ let setBattle = () => {
 }
 //Levels up the player and their stats.
 let playerLevelUp = () => {
-    player.expNeeded = (player.level * player.hp) + (player.attack * player.defense) * player.hp / 10
+    player.expNeeded = (player.level * player.hp) + (player.attack * player.defense) * player.hp / 25
     console.log(player.expNeeded)
     if (player.exp >= player.expNeeded) {
         console.log(player)
