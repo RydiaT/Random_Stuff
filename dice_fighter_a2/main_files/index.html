@@ -42,10 +42,10 @@
     <div class="lead" id="playerDamageDealt"></div>
 </div>
 <div class="container text-center">
-<div class="btn-group">
+<div class="btn-group" id="main_buttons">
     <button class="btn btn-outline-dark" type="button" onclick="startWaves();" id="waveButton">Start Wave</button>
     <button class="btn btn-outline-dark" type="button" onclick="Basic_Atk.attackEnemy()" id="attackButton">Attack</button>
-    <button class="btn btn-outline-dark" type="button" onclick="Basic_Heal.healPlayer()" id="healButton">Heal</button>
+    <button class="btn btn-outline-dark" type="button" onclick="Basic_Heal.healPlayer()" id="healButton" hidden>Heal</button>
     <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#inventoryScreen">Inventory</button>
 </div>
 </div>

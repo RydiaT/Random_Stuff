@@ -23,6 +23,9 @@ let playerLevelUp = () => {
         player.const_defense += 2
         player.exp = 0
         console.log(player)
+        if (player.level === 10) {
+            healButton.hidden = false
+        }
     }
 }
 //Checks to see if the battle has ended
@@ -66,4 +69,10 @@ let unlockButtons = () => {
     attackButton.disabled = false
     healButton.disabled = false
     waveButton.disabled = true
+}
+let invTest = () => {
+    Health_Ptn.addToInventory()
+    Strength_Ptn.addToInventory()
+    Defense_Ptn.addToInventory()
+    console.log("Items added to inventory!")
 }

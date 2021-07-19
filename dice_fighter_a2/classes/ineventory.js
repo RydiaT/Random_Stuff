@@ -48,12 +48,13 @@ class Item {
         } else {
             console.log("Something went wrong with item uses")
         }
-        invArray.splice(invArray.indexOf(this.name), 1)
-            if (this.id === 0) {
+
+            if (invArray.indexOf(this.name) === 0) {
                 inventory.deleteRow(1)
             } else {
-                inventory.deleteRow(this.id)
+                inventory.deleteRow(invArray.indexOf(this.name) + 1)
             }
+            invArray.splice(invArray.indexOf(this.name), 1)
         } else {
             console.log("That isn't in your inventory!")
         }
