@@ -3,7 +3,7 @@ let RANDOM_WORD = ''
 let PLAYER_INPUTS = []
 //Update the important bits
 let updateInputs = () => {
-    let playerInput = '' + document.getElementById("playerinput").value
+    let playerInput = '' + playerInput.value
     PLAYER_INPUTS.push(playerInput)
 };
 //Do the work
@@ -12,9 +12,8 @@ let pickRandom = () => {
     RANDOM_WORD = PLAYER_INPUTS[randomNumber]
     return RANDOM_WORD
 };
-//Make Word Apear
+//Make Word
 let showWork = () => {
-    let randWord = document.getElementById('randword')
     randWord.innerHTML = RANDOM_WORD
 };
 //Run everything needed to generate random word
@@ -24,6 +23,6 @@ let doThing = () => {
 }
 //Clear the board
 let clearList = () => {
-    randword.innerHTML = ''
+    randWord.innerHTML = ''
     PLAYER_INPUTS = []
 }

@@ -1,10 +1,9 @@
-
+let count = 0
 class Wave {
     constructor(neededKills, enemyStrength, enemies) {
         this.neededKills = neededKills
         this.enemyStrength = enemyStrength
         this.enemies = enemies
-        this.count = 0
     }
     setNewWave() {
       if(enemiesKilled === this.neededKills) {
@@ -15,8 +14,8 @@ class Wave {
                 this.enemies[i].hp += this.enemyStrength
                 this.enemies[i].const_hp += this.enemyStrength
         }
-          this.count++
-          console.log("Wave " + this.count + " started!")
+          count++
+          console.log("Wave " + count + " started!")
           enemyList = this.enemies
       }
     }
