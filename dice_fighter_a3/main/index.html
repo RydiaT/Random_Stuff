@@ -12,8 +12,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<div class="container text-center">
+<body style="background-color: antiquewhite">
+<div class="container text-center" id="mainSection" hidden>
         <div class="container rounded p-3 my-3 border text-center">
             <div class="lead" id="enemyHPText"></div>
             <div class="progress rounded">
@@ -26,12 +26,14 @@
             <div id="enemyAttack" class="lead"></div>
             <div id="playerAttack" class="lead"></div>
         </div>
-<div class="btn-group">
-    <button class="btn btn-outline-dark" type="button" id="waveButton" onclick="waveBattle()">Enemy Waves</button>
-    <button class="btn btn-outline-dark" type="button" id="bossButton">Boss Fight</button>
-</div>
     <button class="btn btn-outline-dark" type="button" id="playerAttackButton" onclick="player.attackEnemy()">Attack Enemy</button>
     <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#skillMenu">Skills</button>
+</div>
+<div class="container text-center">
+    <div class="btn-group">
+        <button class="btn btn-outline-dark" type="button" id="waveButton" onclick="waveBattle()">Enemy Waves</button>
+        <button class="btn btn-outline-dark" type="button" id="bossButton">Boss Fight</button>
+    </div>
 </div>
 <div class="modal fade" id="skillMenu" tabindex="-1" aria-labelledby="skillMenuLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">

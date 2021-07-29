@@ -5,6 +5,7 @@ let playerAttack;
 let enemyHPText;
 let playerHPText;
 let skillTable;
+let mainSection;
 let initialize = () => {
     enemyHP = document.getElementById("enemyHP")
     playerHP = document.getElementById("playerHP")
@@ -13,6 +14,7 @@ let initialize = () => {
     enemyHPText = document.getElementById("enemyHPText")
     playerHPText = document.getElementById("playerHPText")
     skillTable = document.getElementById("skillTable")
+    mainSection = document.getElementById("mainSection")
 }
 let updateScreen = () => {
     playerHP.style.width = (player.hp / player.const_hp * 100) + "%"

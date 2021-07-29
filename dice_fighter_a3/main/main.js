@@ -10,6 +10,9 @@ let waveBattle = () => {
     enemyAttackInterval = setInterval(function(){
         currentEnemy.attackPlayer();
     }, currentEnemy.at)
+    if(mainSection.hidden === true) {
+        mainSection.hidden = false
+    }
 }
 let checkBattleEnd = () => {
     if (player.hp <= 0) {

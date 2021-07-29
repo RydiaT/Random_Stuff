@@ -38,7 +38,7 @@ let player = {
         }
     },
     checkSkills() {
-        this.skillEXPNeeded.attack.melee = (this.skills.attack.melee * this.hp) / this.attack
+        this.skillEXPNeeded.attack.melee = (this.skills.attack.melee * this.hp) / 2
         if(this.skillEXP.attack.melee >= this.skillEXPNeeded.attack.melee) {
             this.skills.attack.melee++
             this.skillEXP.attack.melee = this.skillEXP.attack.melee - this.skillEXPNeeded.attack.melee
