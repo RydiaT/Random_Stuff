@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="initialize.js"></script>
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>Idle Game</title>
+</head>
+<body id="screen">
+<div class="text-center">
+<div class="container rounded p-3 my-3 border">
+        <h1 id="moneyCounter"></h1>
+        <button class="btn btn-outline-dark" type="button" onclick="makeMoney()">Make Money!</button>
+    </div>
+    <br>
+    <div>
+        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#shopMenu" onclick="checkShop()" id="itemShop" hidden>More Money Inc.</button>
+        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#shopMenu2" onclick="checkShop()">Screen Decor R Us</button>
+    </div>
+    <br>
+    <div>
+        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#prestigeMenu" onclick="checkPrestige()">Prestige</button>
+    </div>
+</div>
+<div class="modal fade" id="shopMenu" tabindex="-1" aria-labelledby="shopMenuLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shopMenuLabel">Shop</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <label for="itemButton1">#1 Boss Mug: <br>Effect: +1 MPC. <br>Cost: 10 Money</label>
+                    <button class="btn btn-outline-dark" type="button" id="itemButton1" onclick="buyThing(1)">Buy</button>
+                    <label for="itemButton1">Enslaved Workers: <br>Effect: +1 MPS <br>Cost: 100 Money</label>
+                    <button class="btn btn-outline-dark" type="button" id="itemButton2" onclick="buyThing(2)">Buy</button>
+                    <label for="itemButton1">Faster Conveyors: <br>Effect: Takes a fifth of a second off MPS. Efficiency! <br>Cost: 1000 Money; Can only be bought once.</label>
+                    <button class="btn btn-outline-dark" type="button" id="itemButton3" onclick="buyThing(3)">Buy</button>
+                    <label for="itemButton1">Annual Company Picnic: <br>Effect: Maybe we shouldn't be as cruel. +5 MPS <br>Cost: 500 Money</label>
+                    <button class="btn btn-outline-dark" type="button" id="itemButton4" onclick="buyThing(4)">Buy</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="shopMenu2" tabindex="-1" aria-labelledby="shopMenu2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shopMenu2Label">Shop</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <label for="decorationButton1">Background Color Randomizer: <br>Effect: Randomizes Background Colour Every Buy. <br>Cost: 25 Money</label>
+                    <button class="btn btn-outline-dark" type="button" id="decorationButton1" onclick="buyThing('A')">Buy</button>
+                    <label for="decorationButton1">Shiny New Button: <br>Effect: Adds a button that may or may not help you. <br>Cost: 50 Money; Can only be bought once.</label>
+                    <button class="btn btn-outline-dark" type="button" id="decorationButton2" onclick="buyThing('B')">Buy</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="prestigeMenu" tabindex="-1" aria-labelledby="prestigeMenuLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="prestigeMenuLabel">Prestige</h5>
+            </div>
+            <div class="modal-body text-center">
+                <h3 class="lead" id="total"></h3>
+                <p>Prestige takes your TOTAL money earned, divides it by my super secret number, and gives you a multiplier for earning money next run. The multiplier is additive through prestige, and your money and upgrades are reset (except for background colours).</p>
+                <button class="btn btn-outline-dark" type="button" onclick="prestige()" id="prestigeButton">Restart!</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    initialize();
+    updateScreen();
+</script>
+</body>
+</html>
