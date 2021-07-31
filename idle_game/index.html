@@ -10,21 +10,24 @@
     <title>Idle Game</title>
 </head>
 <body id="screen">
+<!--Main Section-->
 <div class="text-center">
-<div class="container rounded p-3 my-3 border">
+    <!--Money and Stats-->
+    <div class="container rounded p-3 my-3 border">
         <h1 id="moneyCounter"></h1>
+        <p id="MPC"></p>
+        <p id="MPS"></p>
         <button class="btn btn-outline-dark" type="button" onclick="makeMoney()">Make Money!</button>
     </div>
     <br>
+    <!--Shop & Prestige Buttons-->
     <div>
         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#shopMenu" onclick="checkShop()" id="itemShop" hidden>More Money Inc.</button>
         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#shopMenu2" onclick="checkShop()">Screen Decor R Us</button>
-    </div>
-    <br>
-    <div>
         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#prestigeMenu" onclick="checkPrestige()">Prestige</button>
     </div>
 </div>
+<!--Shop Modals-->
 <div class="modal fade" id="shopMenu" tabindex="-1" aria-labelledby="shopMenuLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
@@ -86,6 +89,7 @@
         </div>
     </div>
 </div>
+<!--Initialises The Ids-->
 <script>
     initialize();
     updateScreen();

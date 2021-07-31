@@ -1,18 +1,20 @@
+//Global Variables
 let money = 0
 let moneyPerSecond = 0;
 let moneySpeed = 1000;
 let moneyPerClick = 1
 let totalMoneyEarned = 0;
 let multiplier = 1.0;
+//Money Per Click function
 let makeMoney = () => {
     money += (moneyPerClick * multiplier)
     totalMoneyEarned += (moneyPerClick * multiplier)
     updateScreen();
     checkShop()
 }
+//Money Per Second function
 let gainMoneyIdle = (x) => {
     moneyPerSecond += x
-    console.log("Money Per Second: " + moneyPerSecond * multiplier)
     setInterval(function(){
         money += (moneyPerSecond * multiplier)
         totalMoneyEarned += (moneyPerSecond * multiplier)
@@ -20,7 +22,9 @@ let gainMoneyIdle = (x) => {
         checkShop()
     }, moneySpeed)
 }
+//Buys the item in the shop
 let buyThing = (item) => {
+    //Upgrades
     if(item === 1){
         money -= 10
         moneyPerClick += 1
@@ -46,12 +50,12 @@ let buyThing = (item) => {
         console.log("Beware Ants!")
         checkShop()
         updateScreen()
+        //Decorations
     }else if(item === "A") {
         money -= 25
         let red = Math.floor(Math.random() * 256)
         let green = Math.floor(Math.random() * 256)
         let blue = Math.floor(Math.random() * 256)
-        console.log(red, green, blue)
         screen.style = "background-color: rgb(" + red + "," + green + ',' + blue + ")"
         console.log("Changed Colour!")
         checkShop()
@@ -66,6 +70,7 @@ let buyThing = (item) => {
     }
 
 }
+//Checks if you have enough money to buy things, and if not, disables the corresponding button.
 let checkShop = () => {
     itemButton1.disabled = money < 10;
     itemButton2.disabled = money < 100;
@@ -74,6 +79,7 @@ let checkShop = () => {
     decorationButton1.disabled = money < 25;
     decorationButton2.disabled = money < 50;
 }
+//Resets everything and ups the multiplier
 let prestige = () => {
     multiplier += totalMoneyEarned / 18000
     money = 0
@@ -86,7 +92,9 @@ let prestige = () => {
     itemButton3.innerHTML = "Buy"
     itemButton3.onclick = function(){buyThing("3")}
     decorationButton2.onclick = function(){buyThing("B")}
+    updateScreen()
 }
+//Checks if you CAN prestige
 let checkPrestige = () => {
     prestigeButton.disabled = totalMoneyEarned < 10000
 }
