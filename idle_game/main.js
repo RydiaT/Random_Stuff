@@ -22,76 +22,38 @@ let gainMoneyIdle = (x) => {
         checkShop()
     }, moneySpeed)
 }
-//Buys the item in the shop
-let buyThing = (item) => {
-    //Upgrades
-    if(item === 1){
-        money -= 10
-        moneyPerClick += 1
-        console.log("Bought Mug!")
-        checkShop()
-        updateScreen()
-    }else if(item === 2) {
-        money -= 100
-        gainMoneyIdle(1)
-        console.log("Bought Worker!")
-        checkShop()
-        updateScreen()
-    }else if(item === 3) {
-        money -= 1000
-        moneySpeed -= 200
-        console.log("Capitalism Ho!!")
-        itemButton3.onclick = false
-        itemButton3.innerHTML = "Already Bought!"
-        updateScreen()
-    }else if(item === 4) {
-        money -= 500
-        gainMoneyIdle(5)
-        console.log("Beware Ants!")
-        checkShop()
-        updateScreen()
-        //Decorations
-    }else if(item === "A") {
-        money -= 25
-        let red = Math.floor(Math.random() * 256)
-        let green = Math.floor(Math.random() * 256)
-        let blue = Math.floor(Math.random() * 256)
-        screen.style = "background-color: rgb(" + red + "," + green + ',' + blue + ")"
-        console.log("Changed Colour!")
-        checkShop()
-        updateScreen()
-    }else if(item === "B") {
-        money -= 50
-        console.log("Added Button!")
-        itemShop.hidden = false
-        decorationButton2.onclick = false
-        decorationButton2.innerHTML = "Already Bought!"
-        updateScreen()
-    }
-
-}
 //Checks if you have enough money to buy things, and if not, disables the corresponding button.
 let checkShop = () => {
-    itemButton1.disabled = money < 10;
-    itemButton2.disabled = money < 100;
-    itemButton3.disabled = money < 1000;
-    itemButton4.disabled = money < 500;
+    itemButtonA1.disabled = money < 10;
+    itemButtonA2.disabled = money < 100;
+    itemButtonA3.disabled = money < 1000;
+    itemButtonA4.disabled = money < 500;
+    itemButtonB1.disabled = money < 100000
+    itemButtonB2.disabled = money < 100000000
+    itemButtonB3.disabled = money < 150000000
+    itemButtonB4.disabled = money < 500000000
     decorationButton1.disabled = money < 25;
     decorationButton2.disabled = money < 50;
+    decorationButton3.disabled = money < 250000;
 }
 //Resets everything and ups the multiplier
 let prestige = () => {
-    multiplier += totalMoneyEarned / 18000
+    multiplier = totalMoneyEarned / 18000
     money = 0
     moneyPerSecond = 0
     totalMoneyEarned = 0;
     moneyPerClick = 1
     moneySpeed = 1000;
     itemShop.hidden = true
+    itemShop2.hidden = true
     decorationButton2.innerHTML = "Buy"
-    itemButton3.innerHTML = "Buy"
-    itemButton3.onclick = function(){buyThing("3")}
+    decorationButton3.innerHTML = "Buy"
+    itemButtonA3.innerHTML = "Buy"
+    itemButtonB3.innerHTML = "Buy"
+    itemButtonA3.onclick = function(){buyThing(3)}
+    itemButtonB3.onclick = function(){buyThing(7)}
     decorationButton2.onclick = function(){buyThing("B")}
+    decorationButton3.onclick = function(){buyThing("C")}
     updateScreen()
 }
 //Checks if you CAN prestige
