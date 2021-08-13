@@ -1,0 +1,16 @@
+D:\Random_Stuff\game_set\game_set_project\bin\Debug\net5.0\game_set_project.exe
+D:\Random_Stuff\game_set\game_set_project\bin\Debug\net5.0\game_set_project.deps.json
+D:\Random_Stuff\game_set\game_set_project\bin\Debug\net5.0\game_set_project.runtimeconfig.json
+D:\Random_Stuff\game_set\game_set_project\bin\Debug\net5.0\game_set_project.runtimeconfig.dev.json
+D:\Random_Stuff\game_set\game_set_project\bin\Debug\net5.0\game_set_project.dll
+D:\Random_Stuff\game_set\game_set_project\bin\Debug\net5.0\ref\game_set_project.dll
+D:\Random_Stuff\game_set\game_set_project\bin\Debug\net5.0\game_set_project.pdb
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\game_set_project.csprojAssemblyReference.cache
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\game_set_project.GeneratedMSBuildEditorConfig.editorconfig
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\game_set_project.AssemblyInfoInputs.cache
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\game_set_project.AssemblyInfo.cs
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\game_set_project.csproj.CoreCompileInputs.cache
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\game_set_project.dll
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\ref\game_set_project.dll
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\game_set_project.pdb
+D:\Random_Stuff\game_set\game_set_project\obj\Debug\net5.0\game_set_project.genruntimeconfig.cache
