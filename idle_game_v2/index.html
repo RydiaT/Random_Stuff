@@ -1,10 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="shop_class.js"></script>
+    <script src="update_screen.js"></script>
+    <meta charset="UTF-8">
+    <title>Idle Game</title>
 </head>
-<body>
-$END$
+<body id="body">
+    <div class="text-center">
+        <div class="container p-3 my-3 border">
+            <div class="row">
+            <div class="display-4 col" id="moneyDisplay"></div>
+            </div>
+            <div class="row">
+            <div class="lead col" id="moneyPerClick"></div>
+            <div class="lead col" id="moneyPerSecond"></div>
+            </div>
+            <div class="row">
+                <button class="btn btn-outline-success shadow-4" type="button" onclick="makeMoney()">Make Money!</button>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row">
+            <button class="btn btn-outline-dark shadow-4 col" type="button" data-bs-toggle="modal" data-bs-target="#shop1" hidden id="shop1Button">Shop 1</button>
+            <button class="btn btn-outline-warning shadow-4 col" type="button" data-bs-toggle="modal" data-bs-target="#shop2" hidden id="shop2Button">Shop 2</button>
+            <button class="btn btn-outline-info shadow-4 col" type="button" data-bs-toggle="modal" data-bs-target="#shop3" hidden id="shop3Button">Shop 3</button>
+            <button class="btn btn-outline-success shadow-4 col" type="button" data-bs-toggle="modal" data-bs-target="#shop4" hidden id="shop4Button">Shop 4</button>
+        </div>
+        <div class="row" style="padding-top: 10px;">
+            <button class="btn col btn-outline-secondary shadow-4" type="button" data-bs-toggle="modal" data-bs-target="#decoShop" onclick="shops.decorShop.checkButtons()">Screen Decor R Us</button>
+        </div>
+        <div class="row" style="padding-top: 10px">
+            <button class="btn btn-outline-dark shadow-4 col" type="button" data-bs-toggle="modal" data-bs-target="#prestigeMenu">Prestige</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="shop1" tabindex="-1" aria-labelledby="shop1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shop1Label">Shop 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="shop1Body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shop2" tabindex="-1" aria-labelledby="shop2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shop2Label">Shop 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="shop2Body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shop3" tabindex="-1" aria-labelledby="shop3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shop3Label">Shop 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="shop3Body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shop4" tabindex="-1" aria-labelledby="shop4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shop4Label">Shop 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="shop4Body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="decoShop" tabindex="-1" aria-labelledby="decoShopLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="decoShopLabel">Decoration Shop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="decoShopBody">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="prestigeMenu" tabindex="-1" aria-labelledby="prestigeMenuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="prestigeMenuLabel">Prestige</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                    <p>Takes the total money you've earned THIS prestige, does a super secret formula, and gives you back prestige points that give you a 0.08 bonus multiplier per point. You can only
+                    use this when you have 50,000 money. Note: Multiplier is rounded up.</p>
+                    </div>
+                    <div class="row text-center">
+                        <p><small id="currentPTS"></small></p>
+                        <p><small id="currentMulti"></small></p>
+                        <p><small id="nextPTS"></small></p>
+                        <p><small id="nextMulti"></small></p>
+                    </div>
+                    <div class="row">
+                    <button class="btn btn-outline-success shadow-4" type="button" onclick="shops.prestige.doPrestige()" id="prestigeButton">Prestige!</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-success shadow-4 col" type="button" data-bs-toggle="modal" data-bs-target="#prestigeShop" hidden id="prestigeShopButton">Open Prestige Shop</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="prestigeShop" tabindex="-1" aria-labelledby="prestigeShopLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="prestigeShopLabel">Prestige Shop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="prestigeShopBody">
+                    <p class="lead">Every cost (except for rebirth) is exponential.</p><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        updateScreen()
+        setupAllShops();
+        setInterval(function(){
+            money += moneyPerSecond * multiplier
+            totalMoneyEarned += moneyPerSecond * multiplier
+            updateScreen()
+            checkAllShops()
+        }, moneySpeed)
+        log()
+    </script>
 </body>
 </html>

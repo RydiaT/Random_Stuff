@@ -5,7 +5,7 @@ namespace game_set_project
 {
     public class Game1
     {
-        //Rock Paper Scissors
+        //Custom Rock Paper Scissors
         private string[] _possibleChoices = {"", "", ""};
         private string _computerChoice = "";
         private string _playerChoice = "";
@@ -14,9 +14,9 @@ namespace game_set_project
         private void SetPossibleChoices()
         {
             int i = 0;
-            foreach(string slot in _possibleChoices)
+            foreach(string choice in _possibleChoices)
             {
-                Console.WriteLine("Set Choice {0}: ", i);
+                Console.WriteLine("!-------------------!\nSet Choice {0}: \n*-------------------*", i);
                 _possibleChoices[i] = Console.ReadLine();
                 i++;
             }
@@ -29,11 +29,12 @@ namespace game_set_project
 
         private string SetPlayerChoice()
         {
-            Console.WriteLine("Please Choose: ");
+            Console.WriteLine("!-------------------!\nPlease Choose: ");
             for(int i = 0; i < 3; i++)
             {
                 Console.WriteLine(_possibleChoices[i]);
             }
+                Console.WriteLine("*-------------------*");
             string input = Console.ReadLine();
             if (_possibleChoices.Contains(input))
             {
@@ -50,20 +51,20 @@ namespace game_set_project
         {
             int playerIndex = Array.IndexOf(_possibleChoices, _playerChoice);
             int enemyIndex = Array.IndexOf(_possibleChoices, _computerChoice);
-            Console.WriteLine("Computer Choice: {0}", _computerChoice);
+            Console.WriteLine("!-------------------!\nComputer Choice: {0}\n*-------------------*", _computerChoice);
             switch (playerIndex)
             {
                 case 0:
                     switch (enemyIndex)
                     {
                         case 0:
-                            Console.WriteLine("Tie!");
+                            Console.WriteLine("!-------------------!\nTie!\n*-------------------*");
                             break;
                         case 1:
-                            Console.WriteLine("Computer Wins!");
+                            Console.WriteLine("!-------------------!\nComputer Wins!\n*-------------------*");
                             break;
                         case 2:
-                            Console.Write("Player Wins!");
+                            Console.Write("!-------------------!\nPlayer Wins!\n*-------------------*");
                             break;
                     }
 
@@ -72,13 +73,13 @@ namespace game_set_project
                     switch (enemyIndex)
                     {
                         case 0:
-                            Console.WriteLine("Player Wins!");
+                            Console.WriteLine("!-------------------!\nPlayer Wins!\n*-------------------*");
                             break;
                         case 1:
-                            Console.WriteLine("Tie!");
+                            Console.WriteLine("!-------------------!\nTie!\n*-------------------*");
                             break;
                         case 2:
-                            Console.Write("Computer Wins!");
+                            Console.Write("!-------------------!\nComputer Wins!\n*-------------------*");
                             break;
                     }
 
@@ -87,13 +88,13 @@ namespace game_set_project
                     switch (enemyIndex)
                     {
                         case 0:
-                            Console.WriteLine("Computer Wins!");
+                            Console.WriteLine("!-------------------!\nComputer Wins!\n*-------------------*");
                             break;
                         case 1:
-                            Console.WriteLine("Player Wins!");
+                            Console.WriteLine("!-------------------!\nPlayer Wins!\n*-------------------*");
                             break;
                         case 2:
-                            Console.Write("Tie");
+                            Console.Write("!-------------------!\nTie!\n*-------------------*");
                             break;
                     }
 
