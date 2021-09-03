@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DungeonCollectorBlazor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DungeonCollectorIdle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/blazor-dungeon-collector" vcs="Git" />
   </component>
 </project>
