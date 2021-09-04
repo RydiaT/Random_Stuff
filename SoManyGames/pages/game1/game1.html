@@ -6,10 +6,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="game1files/main.js"></script>
     <script src="game1files/initialize.js"></script>
+    <script src="game1files/shopstuff.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body style="background-color: #fff4e5">
 <!-- Header -->
 <div class="text-center">
 <h1>Mmmm Money</h1>
@@ -17,7 +18,12 @@
 <!-- Game -->
 <div class="container text-center rounded p-2 my-3 border">
     <h1 id="moneyCounter" class="lead display-4">$0.00</h1>
+    <p class="lead" id="MPSText"></p>
+    <p class="lead" id="MPCText"></p>
     <button class="btn btn-outline-success" onclick="makeMoney()">Make Money!</button>
+</div>
+<div class="text-center">
+    <button type="button" class="btn btn-outline-dark col" data-bs-toggle="modal" data-bs-target="#shopMenu1" id="itemShop" onclick="checkShop(); updateShops()">Shop 1</button>
 </div>
 
 <!-- Footer -->
@@ -26,8 +32,50 @@
     <button class="btn btn-outline-dark" type="button" onclick="location.href='../home.html'">Home</button>
 </div>
 </footer>
+<!-- Modals -->
+<!-- Shop 1 -->
+<div class="modal fade" id="shopMenu1" tabindex="-1" aria-labelledby="shopMenu1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shopMenu1Label">Shop 1</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                <label for="A1">Effect: +1 MPC</label>
+                    <p id="A1Cost"></p>
+                <button id="A1" class="btn btn-outline-success" onclick="currentMoney -= (10 * 1.15 ** A1Bought); MPC += 1; checkShop(); updateScreen(); A1Bought++; updateShops()">Buy!</button>
+                </div>
+                <div class="row">
+                    <label for="A2">Effect: +1 MPS</label>
+                    <p id="A2Cost"></p>
+                    <button id="A2" class="btn btn-outline-success" onclick="currentMoney -= (25 * 1.15 ** A2Bought); MPS += 1; checkShop(); updateScreen(); A2Bought++; updateShops()">Buy!</button>
+                </div>
+                <div class="row">
+                    <label for="A3">Effect: +10 MPC</label>
+                    <p id="A3Cost"></p>
+                    <button id="A3" class="btn btn-outline-success" onclick="currentMoney -= (100 * 1.15 ** A3Bought); MPC += 10; checkShop(); updateScreen(); A3Bought++; updateShops()">Buy!</button>
+                </div>
+                <div class="row">
+                    <label for="A4">Effect: +10 MPS</label>
+                    <p id="A4Cost"></p>
+                    <button id="A4" class="btn btn-outline-success" onclick="currentMoney -= (250 * 1.15 ** A4Bought); MPS += 10; checkShop(); updateScreen(); A4Bought++; updateShops()">Buy!</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shop 2 -->
 <script>
     initialize();
+    setInterval(function(){
+        currentMoney += MPS
+        updateScreen();
+        checkShop();
+    }, 1000)
 </script>
 </body>
 </html>
